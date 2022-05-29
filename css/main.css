@@ -15,7 +15,7 @@ body {
 
 .containerBase {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   padding: 10px 0px;
   margin: auto;
   display: grid;
@@ -66,7 +66,7 @@ body {
   grid-area: grid_mozalk;
 }
 .containerBase .grid_contact {
-  margin-top: 200px;
+  margin-top: 100px;
   grid-area: grid_contact;
 }
 .containerBase .grid_pagination {
@@ -503,7 +503,7 @@ body {
 .container_pagination {
   width: 100%;
   padding: 20px 0px;
-  background: rgb(28, 28, 28);
+  background: rgb(15, 15, 15);
 }
 .container_pagination .container_pagination_ul {
   width: 400px;
@@ -527,7 +527,7 @@ body {
 .container_footer {
   width: 100%;
   padding: 20px 0px;
-  background: rgb(46, 46, 46);
+  background: rgb(15, 15, 15);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
