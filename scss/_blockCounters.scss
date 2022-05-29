@@ -1,0 +1,114 @@
+@import "variables";
+.subGrid_BlockCounters{
+    width: 100%;
+    background:transparent;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "subGrid_box60    subGrid_box08"
+                         "subGrid_box122   subGrid_box10"
+            ;
+
+
+            //CODIGO REUTILIZADO EN 4 ELEMENTOS
+            .subGrid_box60{
+                padding: 5px;
+                //background: rgb(147, 201, 20);
+                grid-area:subGrid_box60 ;
+                .container_box60{
+                    width: 100%;
+                    height: 150px;
+                    background: $color_negro;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                   .container_box60_number{
+                        color: $color_rojo;  
+                        font-size: 40px;
+                   } 
+                   .container_box60_parrafo{
+                       color: $color_enlaces;
+                       font-size: 18px;
+                       font-style: normal;
+
+                   }
+                }
+            }
+
+            .subGrid_box08{
+                padding: 5px;
+                //background: rgb(147, 201, 20);
+                grid-area:subGrid_box08 ;
+                .container_box60{
+                    width: 100%;
+                    height: 150px;
+                    background: $color_negro;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                   .container_box60_number{
+                        color: $color_rojo;  
+                        font-size: 40px;
+                   } 
+                   .container_box60_parrafo{
+                       color: $color_enlaces;
+                       font-size: 18px;
+                       font-style: normal;
+
+                   }
+                }
+            }
+
+            .subGrid_box122{
+                padding: 5px;
+                //background: rgb(147, 201, 20);
+                grid-area:subGrid_box122 ;
+                .container_box60{
+                    width: 100%;
+                    height: 150px;
+                    background: $color_negro;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                   .container_box60_number{
+                        color: $color_rojo;  
+                        font-size: 40px;
+                   } 
+                   .container_box60_parrafo{
+                       color: $color_enlaces;
+                       font-size: 18px;
+                       font-style: normal;
+
+                   }
+                }
+            }
+
+            .subGrid_box10{
+                padding: 5px;
+                //background: rgb(147, 201, 20);
+                grid-area:subGrid_box10 ;
+                .container_box60{
+                    width: 100%;
+                    height: 150px;
+                    background: $color_negro;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                   .container_box60_number{
+                        color: $color_rojo;  
+                        font-size: 40px;
+                   } 
+                   .container_box60_parrafo{
+                       color: $color_enlaces;
+                       font-size: 18px;
+                       font-style: normal;
+
+                   }
+                }
+            }
+
+}

@@ -1,0 +1,54 @@
+@import "variables";
+
+.container_footer{
+    width: 100%;
+    padding: 20px 0px;
+    background:$color_grey_claro;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .container_footer_logo{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        .iconLogo{
+            font-size: 35px;
+            color: $color_rojo;
+        }
+    }
+    .container_footer_redes{
+        width: 150px;
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        .container_footer_redes_box{
+            
+            //background: paleturquoise;
+            .icon{
+                font-size:25px;
+                color: $color_grey;
+            }
+        }
+    }
+    .container_footer_detalle{
+        width: auto;
+        padding: 10px 0px;
+        margin-right: 20px;
+        .iconDetalle{
+            font-size: 20px;
+            color: $color_rojo;
+            margin-left: 5px;
+        }
+        span{
+            margin-left: 10px;
+            color: $color_enlaces;
+        }
+    }
+}

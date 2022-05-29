@@ -1,0 +1,35 @@
+@import "variables";
+
+.container_cuadroBig{
+    width: 100%;
+    height: 500px;
+    padding:20px;
+    background: $color_negro_fuerte;
+    .container_cuadroBig_box{
+        width:100%;
+        height: 400px;
+        margin: auto;
+        background: rgb(37, 37, 37);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       .container_cuadroBig_box_image{
+           width: 80%;
+           height: 250px;
+           box-shadow: 0px 0px 10px black;
+           border-radius: 5px;
+       } 
+    }
+
+    .container_cuadroBig_title{
+        margin-top: 5px;
+        color: $color_enlaces;
+    }
+    .containerUIDesing_vinculo{
+        margin-top: 5px;
+        color: $color_rojo;
+        .iconVinculo{
+            color: $color_rojo;
+        }
+    }
+}

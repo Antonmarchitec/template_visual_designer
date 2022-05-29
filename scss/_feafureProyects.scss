@@ -1,0 +1,35 @@
+@import "variables";
+
+.container_feafureProyects{
+        width: 100%;
+        padding: 10px 0px;
+        background:$color_negro_fuerte;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    .container_feafureProyects_base{
+        padding: 10px 0px;
+        margin-left: 20px;
+        .container_feafureProyects_base_title{
+           color: $color_enlaces;
+           font-size: 30px;
+        }
+        .container_feafureProyects_base_subtitle{
+           color: $color_enlaces;
+           font-size: 18px;
+           font-style: normal;
+           font-weight: 300;
+        }
+    }
+
+    .container_feafureProyects_base_button{
+           padding: 10px 30px;
+           margin-right: 20px;
+           background: $color_rojo;
+           color: $color_enlaces;
+           border: none;
+    }
+
+}

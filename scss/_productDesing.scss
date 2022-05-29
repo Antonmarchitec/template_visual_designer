@@ -1,0 +1,36 @@
+@import "variables";
+
+
+.containerProductDesing{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    padding: 40px;
+    background-color:$color_rojo;
+    .containerProductDesing_baseIcon{
+       width: 40px;
+       height: 40px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        .iconProductDesing{
+            font-size: 30px;
+            color: $color_enlaces;
+        }
+    }
+    .containerProductDesing_text{
+        margin-top: 10px;
+        color:$color_enlaces;
+        font-weight: 300;
+        color: $color_grey;
+    }
+
+    .containerProductDesing_vinculo{
+        margin-top: 10px;
+        color:$color_enlaces;
+        .iconVinculo{  
+            color:$color_enlaces;
+
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import "variables";
+
+.container_contact{
+        width: 100%;
+        padding: 100px 20px;
+        background:$color_grey_claro;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    .container_contact_block{
+        width: 600px;
+        padding: 10px 0px;
+        margin-left: 20px;
+        .container_contact_block_title{
+           color: $color_enlaces;
+           font-size: 50px;
+           line-height: 42px;
+        }
+        .container_contact_block_parrafo{
+            margin-top: 20px;
+            color: $color_enlaces;
+        }
+    }
+
+    .container_contact_block_button{
+        margin-right: 100px;
+        padding: 10px 30px;
+        background: $color_rojo;
+        border: none;
+        color: $color_enlaces;
+        text-transform: uppercase;
+
+    }
+}

@@ -1,0 +1,28 @@
+@import "variables";
+
+
+.containerYears{
+    width: 90%;
+    margin: auto;
+    height: 320px;
+    padding: 10px 0px;
+    background:$color_negro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    .containerYears_number{
+        width: 100px;
+        padding: 5px 0px;
+        color: $color_rojo;
+        font-size: 100px;
+        letter-spacing: -12px;
+        font-weight: 700;
+    }
+    .containerYears_texto{
+        color: $color_enlaces;
+        font-size: 25px;
+        font-weight: 700;
+    }
+}

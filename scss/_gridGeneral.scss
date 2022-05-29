@@ -1,0 +1,149 @@
+@import "variables";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;    //300   700
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $color_negro_fuerte;
+}
+
+.containerBase{
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0px;
+    margin: auto;
+    //background:brown;
+    display: grid;
+    //grid-gap: 1em;
+    position: relative;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
+                         "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding"
+                         "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
+                         "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" 
+                         "grid_vintage          grid_vintage          grid_vintage         grid_foodasa         grid_foodasa         grid_foodasa"
+                         "grid_accent           grid_accent           grid_accent          grid_mozalk          grid_mozalk          grid_mozalk"
+                         "grid_contact          grid_contact          grid_contact         grid_contact         grid_contact         grid_contact"
+                         "grid_pagination       grid_pagination       grid_pagination      grid_pagination      grid_pagination      grid_pagination" 
+                         "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer"
+                         ;
+
+    .grid_Header{
+        //padding: 10px 0px;
+        //background: rgb(214, 97, 97);
+        grid-area: grid_Header;
+    }
+
+    /// CONFORMAN EL SEGUNDO BLOQUE DE LA GRID////
+    .grid_UIDesing{
+        //padding: 10px 0px;
+        //background: rgb(214, 97, 97);
+        margin-top: 100px;
+        grid-area: grid_UIDesing;
+    }
+    .grid_productDesing{
+        //padding: 10px 0px;
+        //background: rgb(214, 97, 97);
+        margin-top: 100px;
+        grid-area: grid_productDesing;
+    }
+    .grid_branding{
+        //padding:10px 0px;
+        //background: rgb(214, 97, 97);
+        margin-top: 100px;
+        grid-area: grid_branding;
+    }
+    /// /////////////////////////////
+
+
+
+
+     /// CONFORMAN EL TERCER BLOQUE DE LA GRID////
+    .gridYears{
+        margin-top: 90px;
+        //padding:10px 0px;
+        //background: rgb(214, 97, 97);
+        grid-area: gridYears;
+    }
+    .grid_BlockCounters{
+        margin-top: 90px;
+        //padding:10px 0px;
+        //background: rgb(214, 97, 97);
+        grid-area: grid_BlockCounters;
+    }
+    /// /////////////////////////////
+
+
+    /// CONFORMAN EL CUARTO BLOQUE DE LA GRID////
+    .grid_feafureProyects{
+        //padding: 10px 0px;
+        //background: rgb(214, 97, 97);
+        margin-top: 100px;
+        grid-area:grid_feafureProyects;
+    }
+    ///////////////////////////////////////
+
+
+    
+    .grid_vintage{
+        //padding:10px 0px;
+        //background: rgb(214, 97, 97);
+        margin-top: 30px;
+        grid-area: grid_vintage;
+    }
+    .grid_foodasa{
+        //padding:10px 0px;
+        //background: rgb(214, 97, 97);
+        grid-area: grid_foodasa;
+    }
+    .grid_accent{
+        //padding:10px 0px;
+        //background: rgb(214, 97, 97);
+        margin-top: 30px;
+        grid-area: grid_accent;
+    }
+
+    .grid_mozalk{
+        //padding:10px 0px;
+        //background: rgb(214, 97, 97);
+        grid-area: grid_mozalk;
+    }
+    .grid_contact{
+        //padding:10px 0px;
+        //background: rgb(214, 97, 97);
+        margin-top: 200px;
+        grid-area: grid_contact;
+    }
+
+    .grid_pagination{
+        //padding:10px 0px;
+        //background: rgb(214, 97, 97);
+        grid-area: grid_pagination;
+    }
+
+    .grid_footer{
+        //padding:10px 0px;
+        //background: rgb(214, 97, 97);
+        grid-area: grid_footer;
+    }
+    
+    .blockA{
+        width: 600px;
+        height: 1000px;
+        background: $color_grey_claro;
+        z-index: -1;
+        position: absolute;
+        top:550px;
+        left: 0;
+    }
+}
+
+

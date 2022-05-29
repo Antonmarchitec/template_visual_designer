@@ -1,0 +1,27 @@
+@import "variables";
+
+.container_pagination{
+    width: 100%;
+    padding: 20px 0px;
+    background: $color_negro;
+    .container_pagination_ul{
+        width: 400px;
+        padding: 10px 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: auto;
+
+        .container_pagination_ul_li{
+            width: 100px;
+            padding: 10px 0px;
+            text-align: center;
+            .li_enlace{
+                text-decoration: none;
+                color: $color_enlaces;
+
+            }
+        }
+    }
+}
