@@ -34,3 +34,52 @@
         }
     }
 }
+
+
+
+
+
+
+@media (min-width:481px) and (max-width:769px){
+        
+.containerProductDesing{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color:$color_rojo;
+    .containerProductDesing_baseIcon{
+       width: 40px;
+       height: 40px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        .iconProductDesing{
+            font-size: 40px;
+            color: $color_enlaces;
+        }
+    }
+    .containerProductDesing_text{
+        margin-top: 10px;
+        color:$color_enlaces;
+        font-weight: 300;
+        color: $color_grey;
+    }
+
+    .containerProductDesing_vinculo{
+        margin-top: 10px;
+        color:$color_enlaces;
+        .iconVinculo{  
+            color:$color_enlaces;
+
+        }
+    }
+}
+
+
+   
+}
+    
+
+
+

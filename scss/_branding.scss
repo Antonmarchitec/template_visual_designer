@@ -32,3 +32,45 @@
         }
     }
 }
+
+
+
+
+
+@media (min-width:481px) and (max-width:769px){
+   
+.containerBranding{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    padding: 20px 40px;
+    background-color:$color_negro;
+    .containerBranding_baseIcon{
+       width: 40px;
+       height: 40px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        .iconBranding{
+            font-size: 40px;
+            color: $color_rojo;
+        }
+    }
+    .containerBranding_text{
+        margin-top: 10px;
+        font-weight: 300;
+        color: $color_grey;
+    }
+
+    .containerBranding_vinculo{
+        margin-top: 10px;
+        color:$color_rojo;
+        .iconVinculo{  
+            color:$color_rojo;
+
+        }
+    }
+}
+
+ 
+}

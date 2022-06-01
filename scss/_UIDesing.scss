@@ -33,3 +33,45 @@
         }
     }
 }
+
+
+
+
+
+
+@media (min-width:481px) and (max-width:769px){
+    
+.containerUIDesing{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color:$color_negro;
+    .containerUIDesing_baseIcon{
+       width: 40px;
+       height: 40px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        .iconUIDesing{
+            font-size: 40px;
+            color: $color_rojo;
+        }
+    }
+    .containerUIDesing_text{
+        margin-top: 10px;
+        color:$color_enlaces;
+        font-weight: 300;
+        color: $color_grey;
+    }
+
+    .containerUIDesing_vinculo{
+        margin-top: 10px;
+        color:$color_rojo;
+        .iconVinculo{  
+            color:$color_rojo;
+
+        }
+    }
+}
+}

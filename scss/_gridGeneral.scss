@@ -17,15 +17,16 @@ body{
 .containerBase{
     width: 100%;
     max-width: 1440px;
-    padding: 10px 0px;
+    //padding: 10px 0px;
     margin: auto;
-    //background:brown;
+    background:$color_negro_fuerte;
     display: grid;
     //grid-gap: 1em;
     position: relative;
     grid-template-columns:repeat(6,1fr);
     grid-template-rows: auto;
-    grid-template-areas: "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
+    grid-template-areas: "grid_headerMovil      grid_headerMovil      grid_headerMovil     grid_headerMovil     grid_headerMovil     grid_headerMovil"
+                         "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
                          "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding"
                          "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
                          "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" 
@@ -36,29 +37,37 @@ body{
                          "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer"
                          ;
 
+                         
+    
+                         
+    .grid_headerMovil{
+        //padding: 10px 0px;
+        //background: rgb(214, 97, 97);
+        grid-area: grid_headerMovil;
+        display: none;
+    }    
+
     .grid_Header{
         //padding: 10px 0px;
         //background: rgb(214, 97, 97);
         grid-area: grid_Header;
+
     }
 
     /// CONFORMAN EL SEGUNDO BLOQUE DE LA GRID////
     .grid_UIDesing{
         //padding: 10px 0px;
         //background: rgb(214, 97, 97);
-        margin-top: 100px;
         grid-area: grid_UIDesing;
     }
     .grid_productDesing{
         //padding: 10px 0px;
         //background: rgb(214, 97, 97);
-        margin-top: 100px;
         grid-area: grid_productDesing;
     }
     .grid_branding{
         //padding:10px 0px;
         //background: rgb(214, 97, 97);
-        margin-top: 100px;
         grid-area: grid_branding;
     }
     /// /////////////////////////////
@@ -68,14 +77,14 @@ body{
 
      /// CONFORMAN EL TERCER BLOQUE DE LA GRID////
     .gridYears{
-        margin-top: 90px;
+    
         //padding:10px 0px;
         //background: rgb(214, 97, 97);
         grid-area: gridYears;
     }
     .grid_BlockCounters{
-        margin-top: 90px;
-        //padding:10px 0px;
+    
+        padding:10px 0px;
         //background: rgb(214, 97, 97);
         grid-area: grid_BlockCounters;
     }
@@ -86,7 +95,6 @@ body{
     .grid_feafureProyects{
         //padding: 10px 0px;
         //background: rgb(214, 97, 97);
-        margin-top: 100px;
         grid-area:grid_feafureProyects;
     }
     ///////////////////////////////////////
@@ -96,18 +104,17 @@ body{
     .grid_vintage{
         //padding:10px 0px;
         //background: rgb(214, 97, 97);
-        margin-top: 30px;
         grid-area: grid_vintage;
     }
     .grid_foodasa{
         //padding:10px 0px;
         //background: rgb(214, 97, 97);
-        grid-area: grid_foodasa;
+        grid-area: grid_foodasa
     }
     .grid_accent{
         //padding:10px 0px;
         //background: rgb(214, 97, 97);
-        margin-top: 30px;
+       
         grid-area: grid_accent;
     }
 
@@ -119,13 +126,12 @@ body{
     .grid_contact{
         //padding:10px 0px;
         //background: rgb(214, 97, 97);
-        margin-top: 100px;
         grid-area: grid_contact;
     }
 
     .grid_pagination{
         //padding:10px 0px;
-        //background: rgb(214, 97, 97);
+        //background: rgb(214, 97, 97)//;
         grid-area: grid_pagination;
     }
 
@@ -147,3 +153,99 @@ body{
 }
 
 
+
+
+
+
+@media (min-width:481px) and (max-width:769px){
+    .containerBase{
+        width: 100%;
+        max-width: 1440px;
+        //padding: 10px 0px;
+        margin: auto;
+        display: grid;
+        //background: brown;
+        //grid-gap: 1em;
+        position: relative;
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "grid_headerMovil      grid_headerMovil      grid_headerMovil     grid_headerMovil     grid_headerMovil     grid_headerMovil"
+                             "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
+                             "grid_UIDesing         grid_UIDesing         grid_UIDesing        grid_productDesing   grid_productDesing   grid_productDesing"
+                             "grid_branding         grid_branding         grid_branding        grid_branding        grid_branding        grid_branding"
+                             "grid_BlockCounters    grid_BlockCounters    grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
+                             "gridYears             gridYears             gridYears            gridYears            gridYears            gridYears"
+                             "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" 
+                             "grid_vintage          grid_vintage          grid_vintage         grid_foodasa         grid_foodasa         grid_foodasa"
+                             "grid_accent           grid_accent           grid_accent          grid_mozalk          grid_mozalk          grid_mozalk"
+                             "grid_contact          grid_contact          grid_contact         grid_contact         grid_contact         grid_contact"
+                             "grid_pagination       grid_pagination       grid_pagination      grid_pagination      grid_pagination      grid_pagination" 
+                             "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer"
+                             ;
+                             .grid_headerMovil{
+                                //padding: 10px 0px;
+                                //background: rgb(214, 97, 97);
+                                grid-area: grid_headerMovil;
+                                display: block;
+                            }    
+                        
+                            .grid_Header{
+                                //padding: 10px 0px;
+                                //background: rgb(214, 97, 97);
+                                grid-area: grid_Header;
+                        
+                            }
+}
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:480px){
+    .containerBase{
+        width: 100%;
+        max-width: 1440px;
+        //padding: 10px 0px;
+        margin: auto;
+        display: grid;
+        //background: rgb(4, 63, 73);
+        //grid-gap: 1em;
+        position: relative;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "grid_headerMovil      grid_headerMovil"
+                             "grid_Header           grid_Header"
+                             "grid_UIDesing         grid_UIDesing"
+                             "grid_productDesing    grid_productDesing"
+                             "grid_branding         grid_branding"
+                             "grid_BlockCounters    grid_BlockCounters"
+                             "gridYears             gridYears"
+                             "grid_feafureProyects  grid_feafureProyects"
+                             "grid_vintage          grid_vintage"
+                             "grid_foodasa          grid_foodasa"
+                             "grid_accent           grid_accent"
+                             "grid_mozalk           grid_mozalk"
+                             "grid_contact          grid_contact"
+                             "grid_pagination       grid_pagination"
+                             "grid_footer           grid_footer"
+                             ;
+                             .grid_headerMovil{
+                                //padding: 10px 0px;
+                                //background: rgb(214, 97, 97);
+                                grid-area: grid_headerMovil;
+                                display: block;
+                            }    
+                        
+                            .grid_Header{
+                                //padding: 10px 0px;
+                                //background: rgb(214, 97, 97);
+                                grid-area: grid_Header;
+                        
+                            }
+}
+}
