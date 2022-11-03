@@ -17,15 +17,16 @@ body{
 .containerBase{
     width: 100%;
     max-width: 1440px;
-    //padding: 10px 0px;
+    padding: 10px 0px;
     margin: auto;
     background:$color_negro_fuerte;
+    background: rgb(57, 57, 57);
     display: grid;
-    //grid-gap: 1em;
+    grid-gap: 1em;
     position: relative;
     grid-template-columns:repeat(6,1fr);
     grid-template-rows: auto;
-    grid-template-areas: "grid_headerMovil      grid_headerMovil      grid_headerMovil     grid_headerMovil     grid_headerMovil     grid_headerMovil"
+    grid-template-areas: "grid_navbar           grid_navbar           grid_navbar          grid_navbar          grid_navbar          grid_navbar"
                          "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
                          "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding"
                          "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
@@ -40,16 +41,14 @@ body{
                          
     
                          
-    .grid_headerMovil{
-        //padding: 10px 0px;
-        //background: rgb(214, 97, 97);
-        grid-area: grid_headerMovil;
-        display: none;
+    .grid_navbar{
+        //padding:  20px 0px;
+        //background: brown;
+        grid-area: grid_navbar;
     }    
 
     .grid_Header{
-        //padding: 10px 0px;
-        //background: rgb(214, 97, 97);
+        padding: 20px 0px;
         grid-area: grid_Header;
 
     }
@@ -61,11 +60,13 @@ body{
         grid-area: grid_UIDesing;
     }
     .grid_productDesing{
+        margin-top: 10px;
         //padding: 10px 0px;
         //background: rgb(214, 97, 97);
         grid-area: grid_productDesing;
     }
     .grid_branding{
+        margin-top: 20px;
         //padding:10px 0px;
         //background: rgb(214, 97, 97);
         grid-area: grid_branding;

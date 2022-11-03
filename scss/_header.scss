@@ -1,112 +1,57 @@
 @import "variables";
 
-.containerSection{
+ //BLOCK PRESENTATION
+ .containerSection_presentation{
+    margin-top: 70px;
     width: 100%;
-    //padding: 10px 0px;
+    padding-top: 50px;
     background: $color_negro_fuerte;
-    .containerSection_navbar{
-        width: 100%;
-        background:$color_negro_fuerte ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    .containerSection_presentation_image{
+        width: 430px;
+        height:500px;
+        margin-left: 80px;
+    }
+
+    .containerSection_presentation_desc{
+        width: 550px; 
         padding: 10px 0px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-       
-       .containerSection_navbar_logo{
-           width: 55px;
-           height: 55px;
-           //background: greenyellow;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           margin-left: 20px;
-           color: $color_enlaces;
-           .iconLogo{
-               color: $color_rojo;
-               font-size: 50px;
-           }
-       }
-       .containerSection_navbar_ul{
-           width:auto;
-           padding: 5px;
-           list-style: none;
-           display: flex;
-           flex-direction: row;
-           justify-content: space-around;
-           align-items: center;
-           text-align: center;
-           margin-right: 20px;
-          .containerSection_navbar_ul_li{
-              width: 100px;
-              padding: 5px;
-              .href_li{
-                  text-decoration: none;
-                  text-transform:uppercase;
-                  color:$color_enlaces;
-                  font-weight: $font_delgada;
-              }
-          }
-       }
-       .containerSection_btnResponsive{
-           width: 50px;
-           height: 50px;
-           background: orange;
-           display: none;
+        margin-right: 50px;
+        .containerSection_presentation_desc_name{
+            color: $color_rojo;
+            font-size: 25px;
 
-       }
-    }
-
-    .containerSection_presentation{
-        margin: 10px auto ;
-        width: 100% ;
-        background: $color_negro_fuerte;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        .containerSection_presentation_image{
-            width: 380px;
-            height:500px;
-            margin-left: 80px;
         }
-
-        .containerSection_presentation_desc{
-            width: 550px; 
-            padding: 10px 0px;
-            margin-right: 50px;
-            .containerSection_presentation_desc_name{
-                color: $color_rojo;
-                font-size: 18px;
-
-            }
-            .containerSection_presentation_desc_profession{
-                color: $color_enlaces;
-                font-size: 80px;
-            }
-            .containerSection_presentation_desc_parraf{
-                color: grey;
-            }
-            .containerSection_presentation_desc_buttom{
-                margin-top: 20px;
-                padding: 8px 30px;
-                background: $color_rojo;
-                color: $color_enlaces;
-                border: none;
-                transition: 0.5s all;
-                &:hover{
-                    background: $color_enlaces;
-                    color: $color_negro;
-                    cursor: pointer;
-                }
+        .containerSection_presentation_desc_profession{
+            color: $color_enlaces;
+            font-size: 80px;
+        }
+        .containerSection_presentation_desc_parraf{
+            color: grey;
+            font-size: 16px;
+        }
+        .containerSection_presentation_desc_buttom{
+            margin-top: 20px;
+            padding: 8px 40px;
+            background: $color_rojo;
+            color: $color_enlaces;
+            border: none;
+            transition: 0.5s all;
+            &:hover{
+                background: $color_enlaces;
+                color: $color_negro;
+                cursor: pointer;
             }
         }
     }
-
-
 }
+    
 
 
 

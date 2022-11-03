@@ -1,57 +1,19 @@
 @import "variables";
 
 .containerBranding{
-    width: 90%;
+    width: 95%;
     height: 300px;
     margin: auto;
     padding: 40px;
     background-color:$color_negro;
     .containerBranding_baseIcon{
-       width: 40px;
-       height: 40px;
+       width: 60px;
+       height: 60px;
        display: flex;
        justify-content: center;
        align-items: center;
         .iconBranding{
-            font-size: 30px;
-            color: $color_rojo;
-        }
-    }
-    .containerBranding_text{
-        margin-top: 10px;
-        font-weight: 300;
-        color: $color_grey;
-    }
-
-    .containerBranding_vinculo{
-        margin-top: 10px;
-        color:$color_rojo;
-        .iconVinculo{  
-            color:$color_rojo;
-
-        }
-    }
-}
-
-
-
-
-
-@media (min-width:481px) and (max-width:769px){
-   
-.containerBranding{
-    width: 100%;
-    height: 200px;
-    margin: auto;
-    padding: 20px 40px;
-    background-color:$color_negro;
-    .containerBranding_baseIcon{
-       width: 40px;
-       height: 40px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-        .iconBranding{
+            margin-left: 5px;
             font-size: 40px;
             color: $color_rojo;
         }
@@ -64,13 +26,28 @@
 
     .containerBranding_vinculo{
         margin-top: 10px;
-        color:$color_rojo;
+        color:white;
+        transition: 0.2s all ease-in;
         .iconVinculo{  
+            margin-left: 5px;
             color:$color_rojo;
+            transition: 0.2s all ease-in;
 
         }
     }
+
+    &:hover{
+        .containerBranding_vinculo{
+            color:$color_rojo;
+            cursor: pointer;
+            .iconVinculo{
+                transform: translateX(10px);
+                color: white;
+            }
+        } 
+        
+    }
 }
 
- 
-}
+
+
