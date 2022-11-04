@@ -66,8 +66,128 @@
    .containerSection_btnResponsive{
        width: 50px;
        height: 50px;
-       background: orange;
        display: none;
 
    }
 }
+
+
+
+
+@media (min-width:320px)  and (max-width:899px){
+    .containerSection_navbar{
+        width: 100%;
+        background:$color_negro_fuerte;
+        box-shadow: 0px 5px 5px ;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+       .containerSection_navbar_logo{
+           width: 60px;
+           height: 60px;
+           //background: greenyellow;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-left: 20px;
+           color: $color_enlaces;
+           .iconLogo{
+               color: $color_rojo;
+               font-size: 50px;
+           }
+       }
+    
+       .containerSection_navbar_ul{
+           width:200px;
+           height: 40vh;
+           background:$color_rojo;
+           padding: initial;
+           list-style: none;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+           align-items: flex-start;
+           text-align: center;
+           margin-right:0px;
+           position: absolute;
+           top: -200px;
+           right: 30px;
+           opacity: 0;
+          .containerSection_navbar_ul_li{
+              width: 100%;
+              height: 20vh;
+              padding: initial;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .href_li{    //a
+                  text-decoration: none;
+                  text-transform:uppercase;
+                  color:white;
+                  font-size: 16px;
+                  font-weight: $font_delgada;
+                  transition: 0.1s all ease-in;
+              }
+              
+          }
+          .containerSection_navbar_ul_li:hover{
+            background: rgb(249, 74, 74);
+            cursor: pointer;
+            .href_li{
+                color: white;
+                padding: 5px 10px;
+                box-shadow: 0px 2px 0px transparent;
+                font-weight:$font_gruesa;
+              }
+          }
+          
+       }
+       .containerSection_navbar_ul_JS{
+          opacity: 1;
+          top: 100px;
+       }
+
+       .containerSection_navbar_ul::before{
+          content: " ";
+          position: absolute;
+          right: 0px;
+          top: -30px;
+          border-top: 15px solid transparent;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-bottom:15px  solid $color_rojo;
+;
+
+       }
+    
+       .containerSection_btnResponsive{
+           width: auto;
+           height: auto;
+           background: transparent;
+           display: block;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-right: 20px;
+           .btnHeader{
+               color: rgb(244, 65, 65);
+               font-size: 40px; 
+               transition: 0.5s all;
+           }
+           .btnHeader:hover{
+                transform: translateX(5px);
+                color: white;
+                cursor: pointer;
+           }
+       }
+    }
+}
+

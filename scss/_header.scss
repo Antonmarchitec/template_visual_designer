@@ -1,7 +1,7 @@
 @import "variables";
 
  //BLOCK PRESENTATION
- .containerSection_presentation{
+.containerSection_presentation{
     margin-top: 70px;
     width: 100%;
     padding-top: 50px;
@@ -51,265 +51,172 @@
         }
     }
 }
-    
 
 
 
-@media (min-width:1025px) and (max-width:1200px){
-    .containerSection{
+@media (min-width:900px) and (max-width:1200px){
+    .containerSection_presentation{
+        margin-top: 70px;
         width: 100%;
-        padding: 10px 0px;
+        padding-top: 50px;
         background: $color_negro_fuerte;
-        .containerSection_navbar{
-           //NO SE TOCA
+        display: flex;
+        flex-direction: row;
+        flex-wrap: initial;
+        justify-content: space-between;
+        align-items: center;
+        
+        .containerSection_presentation_image{
+            width: 430px;
+            height:500px;
+            margin-left: 30px;
         }
     
-        .containerSection_presentation{
-            margin: 0px;
-            width: 100% ;
-            background: $color_negro_fuerte;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            .containerSection_presentation_image{
-                width: 380px;
-                height:500px;
-                margin-left: 80px;
+        .containerSection_presentation_desc{
+            width: 550px; 
+            padding: 10px 0px;
+            margin-right: 30px;
+            .containerSection_presentation_desc_name{
+                color: $color_rojo;
+                font-size: 25px;
+    
             }
-    
-            .containerSection_presentation_desc{
-                width: calc(50%); 
-                padding: 10px 0px;
-                margin-right: 50px;
-                .containerSection_presentation_desc_name{
-                    color: $color_rojo;
-                    font-size: 18px;
-    
-                }
-                .containerSection_presentation_desc_profession{
-                    color: $color_enlaces;
-                    font-size: 80px;
-                }
-                .containerSection_presentation_desc_parraf{
-                    color: grey;
-                }
-                .containerSection_presentation_desc_buttom{
-                    margin-top: 20px;
-                    padding: 8px 30px;
-                    background: $color_rojo;
-                    color: $color_enlaces;
-                    border: none;
-                    transition: 0.5s all;
-                    &:hover{
-                        background: $color_enlaces;
-                        color: $color_negro;
-                        cursor: pointer;
-                    }
+            .containerSection_presentation_desc_profession{
+                color: $color_enlaces;
+                font-size: 70px;
+                line-height: 70px;
+            }
+            .containerSection_presentation_desc_parraf{
+                margin-top: 20px;
+                color: grey;
+                font-size: 16px;
+            }
+            .containerSection_presentation_desc_buttom{
+                margin-top: 20px;
+                padding: 8px 40px;
+                background: $color_rojo;
+                color: $color_enlaces;
+                border: none;
+                transition: 0.5s all;
+                &:hover{
+                    background: $color_enlaces;
+                    color: $color_negro;
+                    cursor: pointer;
                 }
             }
         }
+    }
+        
+}
 
+
+
+@media (min-width:481px)  and (max-width:899px){
+    .containerSection_presentation{
+        margin-top: 50px;
+        width: 100%;
+        padding-top: 50px;
+        background: $color_negro_fuerte;
+        display: flex;
+        flex-direction:column-reverse;
+        flex-wrap: initial;
+        justify-content: space-between;
+        align-items: center;
+        .containerSection_presentation_image{
+            width: 430px;   
+            height:500px;
+            margin-left: 30px;
+        }
+    
+        .containerSection_presentation_desc{
+            width: 95%; 
+            padding: 10px 0px;
+            margin-right: initial;
+            margin: auto;
+            .containerSection_presentation_desc_name{
+                color: $color_rojo;
+                font-size: 30px;
+    
+            }
+            .containerSection_presentation_desc_profession{
+                margin-top: 20px;
+                color: $color_enlaces;
+                font-size: 90px;
+                line-height: 70px;
+            }
+            .containerSection_presentation_desc_parraf{
+                margin-top: 20px;
+                color: grey;
+                font-size: 16px;
+            }
+            .containerSection_presentation_desc_buttom{
+                width: 220px;
+                margin-top: 20px;
+                padding: 8px 40px;
+                background: $color_rojo;
+                color: $color_enlaces;
+                border: none;
+                transition: 0.5s all;
+                
+            }
+        }
     }
 }
 
 
-
-
-
-@media (min-width:770px) and (max-width:1024px){
-    .containerSection{
+@media (min-width:320px)  and (max-width:480px){
+    .containerSection_presentation{
+        margin-top: 50px;
         width: 100%;
-        padding: 10px 0px;
+        padding-top: 50px;
         background: $color_negro_fuerte;
-        .containerSection_navbar{
-           //NO SE TOCA 
+        display: flex;
+        flex-direction:column-reverse;
+        flex-wrap: initial;
+        justify-content: space-between;
+        align-items: center;
+        .containerSection_presentation_image{
+            width: 100%;   
+            height:initial;
+            margin-left: initial;
         }
     
-        .containerSection_presentation{
-            margin: 0px;
-            width: 100% ;
-            background: $color_negro_fuerte;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content:center;
-            align-items: center;
-            .containerSection_presentation_image{
-                width: 40%;
-                height:450px;
-                margin-left:initial;
-            }
+        .containerSection_presentation_desc{
+            width: 100%; 
+            padding: 10px 0px;
+            margin-right: initial;
+            margin: initial;
+            .containerSection_presentation_desc_name{
+                color: $color_rojo;
+                font-size: 30px;
+                padding: 0px 10px;
     
-            .containerSection_presentation_desc{
-                width:45%; 
-                padding: 10px 0px;
-                margin-right:initial;
-                .containerSection_presentation_desc_name{
-                    color: $color_rojo;
-                    font-size: 18px;
-
-                }
-                .containerSection_presentation_desc_profession{
-                    color: $color_enlaces;
-                    font-size: 60px;
-                    line-height: 60px;
-                }
-                .containerSection_presentation_desc_parraf{
-                    color: grey;
-                }
-                .containerSection_presentation_desc_buttom{
-                    margin-top: 20px;
-                    padding: 8px 30px;
-                    background: $color_rojo;
-                    color: $color_enlaces;
-                    border: none;
-                    transition: 0.5s all;
-                    &:hover{
-                        background: $color_enlaces;
-                        color: $color_negro;
-                        cursor: pointer;
-                    }
-                }
+            }
+            .containerSection_presentation_desc_profession{
+                margin-top: 20px;
+                padding: 0px 10px;
+                width: 90%;
+                color: $color_enlaces;
+                font-size: 70px;
+                line-height: 60px;
+            }
+            .containerSection_presentation_desc_parraf{
+                margin-top: 20px;
+                padding: 0px 10px;
+                color: grey;
+                font-size: 16px;
+            }
+            .containerSection_presentation_desc_buttom{
+                width: 220px;
+                margin-top: 20px;
+                margin-left: 10px;
+                padding: 8px 40px;
+                background: $color_rojo;
+                color: $color_enlaces;
+                border: none;
+                transition: 0.5s all;
+                
             }
         }
-
     }
-}
-
-
-
-
-
-
-@media (min-width:641px) and (max-width:769px){
-    .containerSection{
-        width: 100%;
-        padding-top:70px;
-        background: $color_negro_fuerte;
-        background: green;
-        .containerSection_navbar{
-            display: none;
-        }
-    
-        .containerSection_presentation{
-            margin: 0px;
-            width: 100% ;
-            background: $color_negro_fuerte;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content:center;
-            align-items: center;
-            .containerSection_presentation_image{
-                width: 40%;
-                height:400px;
-                margin-left:initial;
-            }
-    
-            .containerSection_presentation_desc{
-                width:45%; 
-                padding: 10px 0px;
-                margin-right:initial;
-                .containerSection_presentation_desc_name{
-                    color: $color_rojo;
-                    font-size: 18px;
-
-                }
-                .containerSection_presentation_desc_profession{
-                    color: $color_enlaces;
-                    font-size: 50px;
-                    line-height: 50px;
-                }
-                .containerSection_presentation_desc_parraf{
-                    color: grey;
-                }
-                .containerSection_presentation_desc_buttom{
-                    margin-top: 20px;
-                    padding: 8px 30px;
-                    background: $color_rojo;
-                    color: $color_enlaces;
-                    border: none;
-                    transition: 0.5s all;
-                    &:hover{
-                        background: $color_enlaces;
-                        color: $color_negro;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    
-    
-    } 
-    
-}
-
-
-
-
-
-@media (min-width:320px) and (max-width:640px){
-    .containerSection{
-        width: 100%;
-        padding-top:70px;
-        background: $color_negro_fuerte;
-        background: green;
-        .containerSection_navbar{
-            display: none;
-        }
-    
-        .containerSection_presentation{
-            margin: 0px;
-            width: 100% ;
-            background: $color_negro_fuerte;
-            display: flex;
-            flex-direction: column-reverse;
-            flex-wrap: wrap;
-            justify-content:center;
-            align-items: center;
-            .containerSection_presentation_image{
-                margin-top: -20px;
-                width: 100%;
-                height:500px;
-                margin-left:initial;
-            }
-    
-            .containerSection_presentation_desc{
-                width:100%; 
-                padding: 50px 20px;
-                margin-right:initial;
-                .containerSection_presentation_desc_name{
-                    color: $color_rojo;
-                    font-size: 20px;
-
-                }
-                .containerSection_presentation_desc_profession{
-                    margin-top: 20px;
-                    color: $color_enlaces;
-                    font-size: 60px;
-                    line-height: 50px;
-                }
-                .containerSection_presentation_desc_parraf{
-                    margin-top: 20px;
-                    color: grey;
-                }
-                .containerSection_presentation_desc_buttom{
-                    margin-top: 20px;
-                    padding: 8px 30px;
-                    background: $color_rojo;
-                    color: $color_enlaces;
-                    border: none;
-                    transition: 0.5s all;
-                    &:hover{
-                        background: $color_enlaces;
-                        color: $color_negro;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    } 
-    
 }

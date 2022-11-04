@@ -3,7 +3,7 @@
 .containerBase{
     width: 100%;
     max-width: 1440px;
-    padding: 10px 20px;
+    padding: 10px 0px;
     margin: auto;
     overflow: hidden;
     background:$color_negro_fuerte;
@@ -128,40 +128,31 @@
         grid-area: grid_footer;
     }
     
-    .blockA{
-        width: 600px;
-        height: 1000px;
-        background: $color_grey_claro;
-        z-index: -1;
-        position: absolute;
-        top:550px;
-        left: 0;
-    }
+    
 }
 
 
 
 
 
-
-@media (min-width:481px) and (max-width:769px){
-    .containerBase{
+@media (min-width:900px) and (max-width:1200px){
+    .containerBase{ 
         width: 100%;
-        max-width: 1440px;
-        //padding: 10px 0px;
+        max-width: initial;
+        padding: 10px 0px;
         margin: auto;
+        overflow: hidden;
+        background:$color_negro_fuerte;
+        background: greenyellow;
         display: grid;
-        //background: brown;
-        //grid-gap: 1em;
+        grid-gap: 1em;
         position: relative;
         grid-template-columns:repeat(6,1fr);
         grid-template-rows: auto;
-        grid-template-areas: "grid_headerMovil      grid_headerMovil      grid_headerMovil     grid_headerMovil     grid_headerMovil     grid_headerMovil"
+        grid-template-areas: "grid_navbar           grid_navbar           grid_navbar          grid_navbar          grid_navbar          grid_navbar"
                              "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
-                             "grid_UIDesing         grid_UIDesing         grid_UIDesing        grid_productDesing   grid_productDesing   grid_productDesing"
-                             "grid_branding         grid_branding         grid_branding        grid_branding        grid_branding        grid_branding"
-                             "grid_BlockCounters    grid_BlockCounters    grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
-                             "gridYears             gridYears             gridYears            gridYears            gridYears            gridYears"
+                             "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding"
+                             "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
                              "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" 
                              "grid_vintage          grid_vintage          grid_vintage         grid_foodasa         grid_foodasa         grid_foodasa"
                              "grid_accent           grid_accent           grid_accent          grid_mozalk          grid_mozalk          grid_mozalk"
@@ -169,70 +160,137 @@
                              "grid_pagination       grid_pagination       grid_pagination      grid_pagination      grid_pagination      grid_pagination" 
                              "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer"
                              ;
-                             .grid_headerMovil{
-                                //padding: 10px 0px;
-                                //background: rgb(214, 97, 97);
-                                grid-area: grid_headerMovil;
-                                display: block;
-                            }    
-                        
-                            .grid_Header{
-                                //padding: 10px 0px;
-                                //background: rgb(214, 97, 97);
-                                grid-area: grid_Header;
-                        
-                            }
-}
+        
+    }
 }
 
 
 
 
-
-
-
-
-
-@media (min-width:320px) and (max-width:480px){
-    .containerBase{
+//amarillo
+@media (min-width:770px)  and (max-width:899px){
+    .containerBase{ 
         width: 100%;
-        max-width: 1440px;
-        //padding: 10px 0px;
+        max-width: initial;
+        padding: 10px 0px;
         margin: auto;
+        overflow: hidden;
+        background:$color_negro_fuerte;
+        background: rgb(245, 194, 11);
         display: grid;
-        //background: rgb(4, 63, 73);
-        //grid-gap: 1em;
+        grid-gap: 1em;
         position: relative;
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:repeat(6,1fr);
         grid-template-rows: auto;
-        grid-template-areas: "grid_headerMovil      grid_headerMovil"
-                             "grid_Header           grid_Header"
-                             "grid_UIDesing         grid_UIDesing"
-                             "grid_productDesing    grid_productDesing"
-                             "grid_branding         grid_branding"
-                             "grid_BlockCounters    grid_BlockCounters"
-                             "gridYears             gridYears"
-                             "grid_feafureProyects  grid_feafureProyects"
-                             "grid_vintage          grid_vintage"
-                             "grid_foodasa          grid_foodasa"
-                             "grid_accent           grid_accent"
-                             "grid_mozalk           grid_mozalk"
-                             "grid_contact          grid_contact"
-                             "grid_pagination       grid_pagination"
-                             "grid_footer           grid_footer"
+        grid-template-areas: "grid_navbar           grid_navbar           grid_navbar          grid_navbar          grid_navbar          grid_navbar"
+                             "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
+                             "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding"
+                             "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
+                             "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" 
+                             "grid_vintage          grid_vintage          grid_vintage         grid_foodasa         grid_foodasa         grid_foodasa"
+                             "grid_accent           grid_accent           grid_accent          grid_mozalk          grid_mozalk          grid_mozalk"
+                             "grid_contact          grid_contact          grid_contact         grid_contact         grid_contact         grid_contact"
+                             "grid_pagination       grid_pagination       grid_pagination      grid_pagination      grid_pagination      grid_pagination" 
+                             "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer"
                              ;
-                             .grid_headerMovil{
-                                //padding: 10px 0px;
-                                //background: rgb(214, 97, 97);
-                                grid-area: grid_headerMovil;
-                                display: block;
-                            }    
-                        
-                            .grid_Header{
-                                //padding: 10px 0px;
-                                //background: rgb(214, 97, 97);
-                                grid-area: grid_Header;
-                        
-                            }
+        
+    }
 }
+
+
+
+
+@media (min-width:641px)  and (max-width:769px){
+    .containerBase{ 
+        width: 100%;
+        max-width: initial;
+        padding: 10px 0px;
+        margin: auto;
+        overflow: hidden;
+        background:$color_negro_fuerte;
+        background: rgb(6, 87, 134);
+        display: grid;
+        grid-gap: 1em;
+        position: relative;
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "grid_navbar           grid_navbar           grid_navbar          grid_navbar          grid_navbar          grid_navbar"
+                             "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
+                             "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding"
+                             "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
+                             "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" 
+                             "grid_vintage          grid_vintage          grid_vintage         grid_foodasa         grid_foodasa         grid_foodasa"
+                             "grid_accent           grid_accent           grid_accent          grid_mozalk          grid_mozalk          grid_mozalk"
+                             "grid_contact          grid_contact          grid_contact         grid_contact         grid_contact         grid_contact"
+                             "grid_pagination       grid_pagination       grid_pagination      grid_pagination      grid_pagination      grid_pagination" 
+                             "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer"
+                             ;
+        
+    }
+}
+
+
+
+
+
+@media (min-width:481px)  and (max-width:640px){
+    .containerBase{ 
+        width: 100%;
+        max-width: initial;
+        padding: 10px 0px;
+        margin: auto;
+        overflow: hidden;
+        background:$color_negro_fuerte;
+        background: rgb(14, 16, 140);
+        display: grid;
+        grid-gap: 1em;
+        position: relative;
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "grid_navbar           grid_navbar           grid_navbar          grid_navbar          grid_navbar          grid_navbar"
+                             "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
+                             "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding"
+                             "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
+                             "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" 
+                             "grid_vintage          grid_vintage          grid_vintage         grid_foodasa         grid_foodasa         grid_foodasa"
+                             "grid_accent           grid_accent           grid_accent          grid_mozalk          grid_mozalk          grid_mozalk"
+                             "grid_contact          grid_contact          grid_contact         grid_contact         grid_contact         grid_contact"
+                             "grid_pagination       grid_pagination       grid_pagination      grid_pagination      grid_pagination      grid_pagination" 
+                             "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer"
+                             ;
+        
+    }
+}
+
+
+
+
+
+@media (min-width:320px)  and (max-width:480px){
+    .containerBase{ 
+        width: 100%;
+        max-width: initial;
+        padding: 10px 0px;
+        margin: auto;
+        overflow: hidden;
+        background:$color_negro_fuerte;
+        background: rgb(140, 3, 133);
+        display: grid;
+        grid-gap: 1em;
+        position: relative;
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "grid_navbar           grid_navbar           grid_navbar          grid_navbar          grid_navbar          grid_navbar"
+                             "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
+                             "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding"
+                             "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
+                             "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" 
+                             "grid_vintage          grid_vintage          grid_vintage         grid_foodasa         grid_foodasa         grid_foodasa"
+                             "grid_accent           grid_accent           grid_accent          grid_mozalk          grid_mozalk          grid_mozalk"
+                             "grid_contact          grid_contact          grid_contact         grid_contact         grid_contact         grid_contact"
+                             "grid_pagination       grid_pagination       grid_pagination      grid_pagination      grid_pagination      grid_pagination" 
+                             "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer"
+                             ;
+        
+    }
 }
