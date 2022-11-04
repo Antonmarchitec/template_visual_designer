@@ -1,19 +1,5 @@
 @import "variables";
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;    //300   700
-}
-
-html{
-    scroll-behavior: smooth;
-}
-body{
-    background-color: $color_negro_fuerte;
-}
-
 .containerBase{
     width: 100%;
     max-width: 1440px;
