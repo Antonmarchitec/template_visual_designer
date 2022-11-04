@@ -13,13 +13,42 @@
     
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/b7fb745aab.js" crossorigin="anonymous"></script>
-    
+
+    <!--FLATICON-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+
+    <!--ANIMATE  CSS-->
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--PERSONALIZADOS CSS-->
+    <link rel="stylesheet" href="./css/preloader.css">
     <title>Porfolio #2</title>
+
+
+
 </head>
 <body>
     <div class="containerBase">
 
-        <div class="grid_navbar">
+        <!--PRELOADER-->
+        <div class="contPreloader" id="contPreloader">
+          <div class="cssload-loader">
+            <div class="cssload-flipper">
+              <div class="cssload-front"></div>
+              <div class="cssload-back"></div>
+            </div>
+          </div>
+
+          <h2 class="textPreloader">
+            Cargando..
+          </h2>
+        </div>
+
+        
+        <!---->
+
+        <div class="grid_navbar" id="navbar">
            <!--BLOCK NAVBAR-->
            <nav class="containerSection_navbar">
               <div class="containerSection_navbar_logo">
@@ -27,7 +56,7 @@
               </div>
 
               <ul class="containerSection_navbar_ul">
-                  <li class="containerSection_navbar_ul_li"><a href="/" class="href_li">Home</a></li>
+                  <li class="containerSection_navbar_ul_li"><a href="index.html" class="href_li">Home</a></li>
                   <li class="containerSection_navbar_ul_li"><a href="/" class="href_li">About As</a></li>
                   <li class="containerSection_navbar_ul_li"><a href="/" class="href_li">Product</a></li>
                   <li class="containerSection_navbar_ul_li"><a href="/" class="href_li">Contact</a></li>
@@ -41,11 +70,13 @@
       
         <div class="grid_Header">
           <section class="containerSection_presentation">
-            <figure class="containerSection_presentation_image">
+            <figure class="containerSection_presentation_image
+            wow animate__animated animate__fadeInLeft" style="animation-delay:0.5s;">
                 <img src="./images/ejecutiva.png" alt="image_presentation" width="100%" height="100%">
             </figure>
 
-            <div class="containerSection_presentation_desc">
+            <div class="containerSection_presentation_desc
+            wow animate__animated animate__fadeInUp" style="animation-delay:0.5s;">
                 <h2 class="containerSection_presentation_desc_name">Hello Im Angela</h2>
                 <h1 class="containerSection_presentation_desc_profession">Visual Designer</h1>
                 <p class="containerSection_presentation_desc_parraf">
@@ -57,7 +88,8 @@
         </div>
         
         <div class="grid_UIDesing">
-          <div class="containerUIDesing">
+          <div class="containerUIDesing
+          wow animate__animated animate__fadeInLeft" style="animation-delay:0.5s;">
 
               <div class="containerUIDesing_baseIcon">
                 <i class="iconUIDesing fa-solid fa-camera"></i>
@@ -76,7 +108,8 @@
 
 
         <div class="grid_productDesing">
-            <div class="containerProductDesing">
+            <div class="containerProductDesing
+            wow animate__animated animate__fadeInUp" style="animation-delay:0.5s;">
 
                 <div class="containerProductDesing_baseIcon">
                   <i class="iconProductDesing fa-brands fa-microsoft"></i>
@@ -95,7 +128,8 @@
 
 
         <div class="grid_branding">
-            <div class="containerBranding">
+            <div class="containerBranding
+            wow animate__animated animate__fadeInRight" style="animation-delay:0.5s;">
 
                 <div class="containerBranding_baseIcon">
                   <i class="iconBranding fa-solid fa-microscope"></i>
@@ -113,16 +147,18 @@
         </div>
 
 
-        <div class="gridYears">
-          <section class="containerYears">
-            <h1 class="containerYears_number">12</h1>
+        <div class="gridYears" id="gridYears">
+          <section class="containerYears
+          wow animate__animated animate__fadeInLeft" style="animation-delay:0.5s;">
+            <h1 class="containerYears_number" id="years">12</h1>
             <p class="containerYears_texto">Year Experience</p>
           </section>
         </div>
 
         <div class="grid_BlockCounters">
 
-         <div class="subGrid_BlockCounters">
+         <div class="subGrid_BlockCounters
+         wow animate__animated animate__fadeInUp" style="animation-delay:0.5s;">
 
             <div class="subGrid_box60">
                <section class="container_box60">
@@ -153,7 +189,7 @@
 
             <div class="subGrid_box10">
                 <section class="container_box60">
-                    <h2 class="container_box60_number">10</h2>
+                    <h2 class="container_box60_number">10+</h2>
                     <p class="container_box60_parrafo">
                         Lorem ipsum dolor sit amet.
                     </p>   
@@ -166,7 +202,8 @@
 
 
         <div class="grid_feafureProyects">
-            <section class="container_feafureProyects">
+            <section class="container_feafureProyects
+            wow animate__animated animate__fadeInUp" style="animation-delay:0.5s;">
                 <div class="container_feafureProyects_base">
                     <h1 class="container_feafureProyects_base_title">Featured proyects</h1>
                     <h2 class="container_feafureProyects_base_subtitle">
@@ -183,7 +220,8 @@
 
 
         <div class="grid_vintage">
-          <section class="container_cuadroBig">
+          <section class="container_cuadroBig
+          wow animate__animated animate__fadeInLeft" style="animation-delay:0.5s;">
              <div class="container_cuadroBig_box">
                <div class="container_cuadroBig_box_image">
                  <img src="./images/img1.jpg" alt="img1" width="100%" height="100%">
@@ -199,7 +237,8 @@
 
         
         <div class="grid_foodasa">
-            <section class="container_cuadroBig">
+            <section class="container_cuadroBig
+            wow animate__animated animate__fadeInRight" style="animation-delay:0.5s;">
                 <div class="container_cuadroBig_box">
                   <div class="container_cuadroBig_box_image">
                     <img src="./images/img2.jpg" alt="img1" width="100%" height="100%">
@@ -214,7 +253,8 @@
         </div>
 
         <div class="grid_accent">
-            <section class="container_cuadroBig">
+            <section class="container_cuadroBig
+            wow animate__animated animate__fadeInLeft" style="animation-delay:0.5s;">
                 <div class="container_cuadroBig_box">
                   <div class="container_cuadroBig_box_image">
                     <img src="./images/img3.jpg" alt="img1" width="100%" height="100%">
@@ -230,7 +270,8 @@
 
         
         <div class="grid_mozalk">
-            <section class="container_cuadroBig">
+            <section class="container_cuadroBig
+            wow animate__animated animate__fadeInRight" style="animation-delay:0.5s;">
                 <div class="container_cuadroBig_box">
                   <div class="container_cuadroBig_box_image">
                     <img src="./images/img4.jpg" alt="img1" width="100%" height="100%">
@@ -247,7 +288,8 @@
 
 
         <div class="grid_contact">
-          <section class="container_contact">
+          <section class="container_contact
+          wow animate__animated animate__fadeInUp" style="animation-delay:0.5s;">
               <div class="container_contact_block">
                 <h1 class="container_contact_block_title">Lest work togueter on
                     your next project
@@ -284,33 +326,48 @@
 
               <div class="container_footer_redes">
                  <div class="container_footer_redes_box">
-                    <a href="#"><i class="icon fa-brands fa-facebook-square"></i></a>
+                    <a href="/"><i class="icon fa-brands fa-facebook-square"></i></a>
                  </div>
                  <div class="container_footer_redes_box">
-                     <a href="#"><i class="icon fa-brands fa-instagram-square"></i></a>
+                     <a href="/"><i class="icon fa-brands fa-instagram-square"></i></a>
                 </div>
                 <div class="container_footer_redes_box">
-                    <a href="#"><i class="icon fa-brands fa-linkedin-in"></i></a>
+                    <a href="/"><i class="icon fa-brands fa-linkedin-in"></i></a>
                 </div>
               </div>
 
               <div class="container_footer_detalle">
-                 <i class="iconDetalle fa-solid fa-arrow-up-from-water-pump"></i>
-                 <span> Lorem ipsum dolor sit amet.</span>
+                 <p class="container_footer_detalle_text">©copyrights reserved 2022 ||<br>
+                  <span>Antonio Ponce || DigitizingCode</span></p>
+
+                  <!--ALT + 0169-->
               </div>
           </footer>
         </div>
 
-        <div class="blockA">
-
-        </div>
-
-        <div class="blockB">
-
-        </div>
+        <a href="#navbar">
+          <div class="botonSubir" id="botonSubir">
+            <i class="iconSubir fi fi-bs-arrow-up-to-dotted-line"></i>
+          </div>
+        </a>
+        
     </div>
 
+
+   <!--PERSONALIZADOS-->
+   <script src="./js/botonSubir.js"></script>
    <script src="./js/main.js"></script>
+   <script src="./js/contadores.js"></script>
+   <script src="./js/preloader.js"></script>
+
+
+
+    <!--WOW -- ANIMATE-->
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
     
 </body>
 </html>

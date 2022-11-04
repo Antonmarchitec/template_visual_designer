@@ -17,10 +17,10 @@ body{
 .containerBase{
     width: 100%;
     max-width: 1440px;
-    padding: 10px 0px;
+    padding: 10px 20px;
     margin: auto;
+    overflow: hidden;
     background:$color_negro_fuerte;
-    background: rgb(57, 57, 57);
     display: grid;
     grid-gap: 1em;
     position: relative;

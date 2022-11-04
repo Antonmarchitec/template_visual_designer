@@ -26,11 +26,16 @@
 
     .container_contact_block_button{
         margin-right: 100px;
-        padding: 10px 30px;
+        padding: 10px 60px;
         background: $color_rojo;
         border: none;
         color: $color_enlaces;
         text-transform: uppercase;
-
+        transition: 0.2s all ease-in;
+    }
+    .container_contact_block_button:hover{
+        background: white;
+        color: $color_negro_fuerte;
+        cursor: pointer;
     }
 }

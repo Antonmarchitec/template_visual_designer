@@ -1,0 +1,35 @@
+@import "variables";
+.botonSubir{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    .iconSubir{
+        color:$color_rojo;
+        font-size: 40px;
+        animation: mover;
+        animation-duration:1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        z-index: 50px;
+    }
+    @keyframes mover {
+        from{
+            transform: translateY(-5px);
+            color: white;
+        }to{
+            transform: translateY(5px);
+        }
+    }
+}
+
+.botonSubir_JS{
+    opacity: 1;
+}

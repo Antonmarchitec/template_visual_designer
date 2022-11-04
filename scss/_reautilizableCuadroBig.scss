@@ -29,7 +29,22 @@
         margin-top: 5px;
         color: $color_rojo;
         .iconVinculo{
+            margin-left: 5px;
             color: $color_rojo;
+            transform: translateX(-20px);
+            transition: 0.3s all;
+            opacity: 0;
         }
     }
+    &:hover{
+        .containerUIDesing_vinculo{
+            cursor: pointer;
+        }
+        .iconVinculo{
+            color: white;
+            transform: translateX(10px);
+            opacity: 1;
+        }
+    }
+    
 }

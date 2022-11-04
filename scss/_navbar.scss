@@ -16,6 +16,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 20;
    
    .containerSection_navbar_logo{
        width: 60px;
@@ -42,6 +43,7 @@
        align-items: center;
        text-align: center;
        margin-right: 20px;
+       position: relative;
       .containerSection_navbar_ul_li{
           width: 100px;
           padding: 5px;
@@ -50,10 +52,12 @@
               text-transform:uppercase;
               color:$color_enlaces;
               font-weight: $font_delgada;
-              transition: 0.2s all ease-in;
+              transition: 0.1s all ease-in;
           }
           .href_li:hover{
             color: $color_rojo;
+            padding: 5px 10px;
+            box-shadow: 0px 2px 0px rgb(250, 37, 37);
           }
       }
       

@@ -16,10 +16,10 @@ body {
 .containerBase {
   width: 100%;
   max-width: 1440px;
-  padding: 10px 0px;
+  padding: 10px 20px;
   margin: auto;
+  overflow: hidden;
   background: rgb(15, 15, 15);
-  background: rgb(57, 57, 57);
   display: grid;
   grid-gap: 1em;
   position: relative;
@@ -138,6 +138,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 20;
 }
 .containerSection_navbar .containerSection_navbar_logo {
   width: 60px;
@@ -149,7 +150,7 @@ body {
   color: white;
 }
 .containerSection_navbar .containerSection_navbar_logo .iconLogo {
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
   font-size: 50px;
 }
 .containerSection_navbar .containerSection_navbar_ul {
@@ -162,6 +163,7 @@ body {
   align-items: center;
   text-align: center;
   margin-right: 20px;
+  position: relative;
 }
 .containerSection_navbar .containerSection_navbar_ul .containerSection_navbar_ul_li {
   width: 100px;
@@ -172,10 +174,12 @@ body {
   text-transform: uppercase;
   color: white;
   font-weight: 300;
-  transition: 0.2s all ease-in;
+  transition: 0.1s all ease-in;
 }
 .containerSection_navbar .containerSection_navbar_ul .containerSection_navbar_ul_li .href_li:hover {
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
+  padding: 5px 10px;
+  box-shadow: 0px 2px 0px rgb(250, 37, 37);
 }
 .containerSection_navbar .containerSection_btnResponsive {
   width: 50px;
@@ -206,7 +210,7 @@ body {
   margin-right: 50px;
 }
 .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_name {
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
   font-size: 25px;
 }
 .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_profession {
@@ -220,7 +224,7 @@ body {
 .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_buttom {
   margin-top: 20px;
   padding: 8px 40px;
-  background: rgb(243, 32, 32);
+  background: rgb(249, 51, 51);
   color: white;
   border: none;
   transition: 0.5s all;
@@ -258,7 +262,7 @@ body {
     margin-right: 50px;
   }
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_name {
-    color: rgb(243, 32, 32);
+    color: rgb(249, 51, 51);
     font-size: 18px;
   }
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_profession {
@@ -271,7 +275,7 @@ body {
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_buttom {
     margin-top: 20px;
     padding: 8px 30px;
-    background: rgb(243, 32, 32);
+    background: rgb(249, 51, 51);
     color: white;
     border: none;
     transition: 0.5s all;
@@ -309,7 +313,7 @@ body {
     margin-right: initial;
   }
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_name {
-    color: rgb(243, 32, 32);
+    color: rgb(249, 51, 51);
     font-size: 18px;
   }
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_profession {
@@ -323,7 +327,7 @@ body {
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_buttom {
     margin-top: 20px;
     padding: 8px 30px;
-    background: rgb(243, 32, 32);
+    background: rgb(249, 51, 51);
     color: white;
     border: none;
     transition: 0.5s all;
@@ -365,7 +369,7 @@ body {
     margin-right: initial;
   }
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_name {
-    color: rgb(243, 32, 32);
+    color: rgb(249, 51, 51);
     font-size: 18px;
   }
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_profession {
@@ -379,7 +383,7 @@ body {
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_buttom {
     margin-top: 20px;
     padding: 8px 30px;
-    background: rgb(243, 32, 32);
+    background: rgb(249, 51, 51);
     color: white;
     border: none;
     transition: 0.5s all;
@@ -422,7 +426,7 @@ body {
     margin-right: initial;
   }
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_name {
-    color: rgb(243, 32, 32);
+    color: rgb(249, 51, 51);
     font-size: 20px;
   }
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_profession {
@@ -438,7 +442,7 @@ body {
   .containerSection .containerSection_presentation .containerSection_presentation_desc .containerSection_presentation_desc_buttom {
     margin-top: 20px;
     padding: 8px 30px;
-    background: rgb(243, 32, 32);
+    background: rgb(249, 51, 51);
     color: white;
     border: none;
     transition: 0.5s all;
@@ -466,7 +470,7 @@ body {
 }
 .containerUIDesing .containerUIDesing_baseIcon .iconUIDesing {
   font-size: 40px;
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
 }
 .containerUIDesing .containerUIDesing_text {
   margin-top: 10px;
@@ -481,12 +485,12 @@ body {
   transition: 0.2s all ease-in;
 }
 .containerUIDesing .containerUIDesing_vinculo .iconVinculo {
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
   margin-left: 5px;
   transition: 0.2s all ease-in;
 }
 .containerUIDesing:hover .containerUIDesing_vinculo {
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
   cursor: pointer;
 }
 .containerUIDesing:hover .containerUIDesing_vinculo .iconVinculo {
@@ -499,7 +503,7 @@ body {
   height: 300px;
   margin: auto;
   padding: 40px;
-  background-color: rgb(243, 32, 32);
+  background-color: rgb(249, 51, 51);
 }
 .containerProductDesing .containerProductDesing_baseIcon {
   width: 60px;
@@ -554,7 +558,7 @@ body {
 .containerBranding .containerBranding_baseIcon .iconBranding {
   margin-left: 5px;
   font-size: 40px;
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
 }
 .containerBranding .containerBranding_text {
   margin-top: 10px;
@@ -568,11 +572,11 @@ body {
 }
 .containerBranding .containerBranding_vinculo .iconVinculo {
   margin-left: 5px;
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
   transition: 0.2s all ease-in;
 }
 .containerBranding:hover .containerBranding_vinculo {
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
   cursor: pointer;
 }
 .containerBranding:hover .containerBranding_vinculo .iconVinculo {
@@ -593,12 +597,15 @@ body {
   line-height: 50px;
 }
 .containerYears .containerYears_number {
-  width: 100px;
-  padding: 5px 0px;
-  color: rgb(243, 32, 32);
-  font-size: 100px;
-  letter-spacing: -12px;
+  width: 80px;
+  height: 80px;
+  color: rgb(249, 51, 51);
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
+  letter-spacing: -3px;
 }
 .containerYears .containerYears_texto {
   color: white;
@@ -622,7 +629,7 @@ body {
   .containerYears .containerYears_number {
     width: 100px;
     padding: 5px 0px;
-    color: rgb(243, 32, 32);
+    color: rgb(249, 51, 51);
     font-size: 100px;
     letter-spacing: -12px;
     font-weight: 700;
@@ -655,7 +662,7 @@ body {
   align-items: center;
 }
 .subGrid_BlockCounters .subGrid_box60 .container_box60 .container_box60_number {
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
   font-size: 40px;
 }
 .subGrid_BlockCounters .subGrid_box60 .container_box60 .container_box60_parrafo {
@@ -677,7 +684,7 @@ body {
   align-items: center;
 }
 .subGrid_BlockCounters .subGrid_box08 .container_box60 .container_box60_number {
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
   font-size: 40px;
 }
 .subGrid_BlockCounters .subGrid_box08 .container_box60 .container_box60_parrafo {
@@ -699,7 +706,7 @@ body {
   align-items: center;
 }
 .subGrid_BlockCounters .subGrid_box122 .container_box60 .container_box60_number {
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
   font-size: 40px;
 }
 .subGrid_BlockCounters .subGrid_box122 .container_box60 .container_box60_parrafo {
@@ -721,7 +728,7 @@ body {
   align-items: center;
 }
 .subGrid_BlockCounters .subGrid_box10 .container_box60 .container_box60_number {
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
   font-size: 40px;
 }
 .subGrid_BlockCounters .subGrid_box10 .container_box60 .container_box60_parrafo {
@@ -732,7 +739,7 @@ body {
 
 .container_feafureProyects {
   width: 100%;
-  padding: 10px 0px;
+  padding: 50px 0px;
   background: rgb(15, 15, 15);
   display: flex;
   flex-direction: row;
@@ -757,47 +764,17 @@ body {
 .container_feafureProyects .container_feafureProyects_base_button {
   padding: 10px 30px;
   margin-right: 20px;
-  background: rgb(243, 32, 32);
+  background: rgb(249, 51, 51);
   color: white;
   border: none;
+  transition: 0.3s all ease;
+}
+.container_feafureProyects .container_feafureProyects_base_button:hover {
+  background: white;
+  color: rgb(28, 28, 28);
+  cursor: pointer;
 }
 
-@media (min-width: 481px) and (max-width: 769px) {
-  .container_feafureProyects {
-    width: 100%;
-    padding: 30px 0px;
-    background: rgb(15, 15, 15);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .container_feafureProyects .container_feafureProyects_base {
-    padding: 10px 0px;
-    margin-left: initial;
-  }
-  .container_feafureProyects .container_feafureProyects_base .container_feafureProyects_base_title {
-    color: white;
-    font-size: 30px;
-  }
-  .container_feafureProyects .container_feafureProyects_base .container_feafureProyects_base_subtitle {
-    margin-top: 5px;
-    color: white;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-  }
-  .container_feafureProyects .container_feafureProyects_base_button {
-    width: 400px;
-    padding: 10px;
-    margin-right: initial;
-    background: rgb(243, 32, 32);
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-}
 .container_cuadroBig {
   width: 100%;
   height: 500px;
@@ -825,10 +802,22 @@ body {
 }
 .container_cuadroBig .containerUIDesing_vinculo {
   margin-top: 5px;
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
 }
 .container_cuadroBig .containerUIDesing_vinculo .iconVinculo {
-  color: rgb(243, 32, 32);
+  margin-left: 5px;
+  color: rgb(249, 51, 51);
+  transform: translateX(-20px);
+  transition: 0.3s all;
+  opacity: 0;
+}
+.container_cuadroBig:hover .containerUIDesing_vinculo {
+  cursor: pointer;
+}
+.container_cuadroBig:hover .iconVinculo {
+  color: white;
+  transform: translateX(10px);
+  opacity: 1;
 }
 
 .container_contact {
@@ -857,11 +846,17 @@ body {
 }
 .container_contact .container_contact_block_button {
   margin-right: 100px;
-  padding: 10px 30px;
-  background: rgb(243, 32, 32);
+  padding: 10px 60px;
+  background: rgb(249, 51, 51);
   border: none;
   color: white;
   text-transform: uppercase;
+  transition: 0.2s all ease-in;
+}
+.container_contact .container_contact_block_button:hover {
+  background: white;
+  color: rgb(15, 15, 15);
+  cursor: pointer;
 }
 
 .container_pagination {
@@ -886,12 +881,16 @@ body {
 .container_pagination .container_pagination_ul .container_pagination_ul_li .li_enlace {
   text-decoration: none;
   color: white;
+  transition: 0.1s all ease-out;
+}
+.container_pagination .container_pagination_ul .container_pagination_ul_li:hover .li_enlace {
+  color: rgb(249, 51, 51);
 }
 
 .container_footer {
   width: 100%;
   padding: 20px 0px;
-  background: rgb(15, 15, 15);
+  background: rgba(28, 28, 28, 0.639);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -907,7 +906,7 @@ body {
 }
 .container_footer .container_footer_logo .iconLogo {
   font-size: 35px;
-  color: rgb(243, 32, 32);
+  color: rgb(249, 51, 51);
 }
 .container_footer .container_footer_redes {
   width: 150px;
@@ -922,19 +921,60 @@ body {
   font-size: 25px;
   color: rgb(185, 185, 185);
 }
+.container_footer .container_footer_redes .container_footer_redes_box .icon:hover {
+  color: rgb(249, 51, 51);
+}
 .container_footer .container_footer_detalle {
-  width: auto;
+  width: 280px;
   padding: 10px 0px;
   margin-right: 20px;
 }
-.container_footer .container_footer_detalle .iconDetalle {
-  font-size: 20px;
-  color: rgb(243, 32, 32);
+.container_footer .container_footer_detalle .container_footer_detalle_text {
+  font-size: 16px;
+  color: rgb(249, 51, 51);
   margin-left: 5px;
 }
 .container_footer .container_footer_detalle span {
   margin-left: 10px;
   color: white;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.botonSubir {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.botonSubir .iconSubir {
+  color: rgb(249, 51, 51);
+  font-size: 40px;
+  animation: mover;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: 50px;
+}
+@keyframes mover {
+  from {
+    transform: translateY(-5px);
+    color: white;
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+.botonSubir_JS {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

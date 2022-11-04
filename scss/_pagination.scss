@@ -20,7 +20,13 @@
             .li_enlace{
                 text-decoration: none;
                 color: $color_enlaces;
+                transition: 0.1s all ease-out;
 
+            }
+            &:hover{
+                .li_enlace{
+                    color: $color_rojo;
+                }
             }
         }
     }
