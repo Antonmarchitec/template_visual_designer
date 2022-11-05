@@ -21,7 +21,7 @@
         }
     }
     .container_footer_redes{
-        width: 150px;
+        width: 120px;
         padding: 5px 0px;
         display: flex;
         flex-direction: row;
@@ -32,7 +32,7 @@
             
             //background: paleturquoise;
             .icon{
-                font-size:25px;
+                font-size:20px;
                 color: $color_grey;
             }
             .icon:hover{
@@ -41,7 +41,6 @@
         }
     }
     .container_footer_detalle{
-        width:280px;
         padding: 10px 0px;
         margin-right: 20px;
         .container_footer_detalle_text{
@@ -54,6 +53,69 @@
             color: $color_enlaces;
             color: rgb(255, 255, 255);
             font-size: 16px;
+        }
+    }
+}
+
+
+
+@media (min-width:320px)  and (max-width:480px){
+    .container_footer{
+        width: 100%;
+        padding: 20px 0px;
+        background:rgba(28, 28, 28, 0.639);
+        display: flex;
+        flex-wrap: initial;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .container_footer_logo{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: initial;
+            .iconLogo{
+                font-size: 35px;
+                color: $color_rojo;
+            }
+        }
+        .container_footer_redes{
+            margin-top: 10px;
+            width: 120px;
+            padding: 5px 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            .container_footer_redes_box{
+                
+                //background: paleturquoise;
+                .icon{
+                    font-size:20px;
+                    color: $color_grey;
+                }
+                .icon:hover{
+                    color: $color_rojo;
+                }
+            }
+        }
+        .container_footer_detalle{
+            padding: 10px 0px;
+            margin-right: initial;
+            .container_footer_detalle_text{
+                font-size: 16px;
+                color: $color_rojo;
+                margin-left: 5px;
+            }
+            span{
+                margin-left: 10px;
+                color: $color_enlaces;
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+            }
         }
     }
 }

@@ -9,33 +9,81 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-    .container_contact_block{
-        width: 600px;
-        padding: 10px 0px;
-        margin-left: 20px;
-        .container_contact_block_title{
-           color: $color_enlaces;
-           font-size: 50px;
-           line-height: 42px;
-        }
-        .container_contact_block_parrafo{
-            margin-top: 20px;
+        .container_contact_block{
+            width: 550px;
+            padding: 10px 0px;
+            margin-left: 20px;
+            .container_contact_block_title{
             color: $color_enlaces;
+            font-size: 50px;
+            line-height: 42px;
+            }
+            .container_contact_block_parrafo{
+                margin-top: 20px;
+                color: $color_enlaces;
+            }
         }
-    }
 
-    .container_contact_block_button{
-        margin-right: 100px;
-        padding: 10px 60px;
-        background: $color_rojo;
-        border: none;
-        color: $color_enlaces;
-        text-transform: uppercase;
-        transition: 0.2s all ease-in;
-    }
-    .container_contact_block_button:hover{
-        background: white;
-        color: $color_negro_fuerte;
-        cursor: pointer;
-    }
+        .container_contact_block_button{
+            margin-right: 60px;
+            padding: 10px 60px;
+            background: $color_rojo;
+            border: none;
+            color: $color_enlaces;
+            text-transform: uppercase;
+            transition: 0.2s all ease-in;
+        }
+        .container_contact_block_button:hover{
+            background: white;
+            color: $color_negro_fuerte;
+            cursor: pointer;
+        }
+}
+
+
+
+
+@media (min-width:320px)  and (max-width:899px){
+    .container_contact{
+        width: 100%;
+        padding: 100px 0px;
+        background:$color_grey_claro;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: initial;
+        justify-content: space-between;
+        align-items: center;
+        .container_contact_block{
+            width: 90%;
+            padding: 10px 0px;
+            margin-left: initial;
+            text-align: center;
+            .container_contact_block_title{
+            color: $color_enlaces;
+            font-size: 35px;
+            line-height: 38px;
+            }
+
+            .container_contact_block_parrafo{
+                margin-top: 20px;
+                color: $color_enlaces;
+            }
+        }
+
+        .container_contact_block_button{
+            margin-top: 30px;
+            margin-right: initial;
+            padding: 10px 60px;
+            background: $color_rojo;
+            border: none;
+            color: $color_enlaces;
+            text-transform: uppercase;
+            transition: 0.2s all ease-in;
+        }
+        .container_contact_block_button:hover{
+            background: white;
+            color: $color_negro_fuerte;
+            cursor: pointer;
+        }
+}
 }

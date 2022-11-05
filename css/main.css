@@ -101,7 +101,6 @@ body::-webkit-scrollbar-thumb:hover {
     margin: auto;
     overflow: hidden;
     background: rgb(15, 15, 15);
-    background: greenyellow;
     display: grid;
     grid-gap: 1em;
     position: relative;
@@ -118,7 +117,6 @@ body::-webkit-scrollbar-thumb:hover {
     margin: auto;
     overflow: hidden;
     background: rgb(15, 15, 15);
-    background: rgb(245, 194, 11);
     display: grid;
     grid-gap: 1em;
     position: relative;
@@ -135,7 +133,6 @@ body::-webkit-scrollbar-thumb:hover {
     margin: auto;
     overflow: hidden;
     background: rgb(15, 15, 15);
-    background: rgb(2, 128, 32);
     display: grid;
     grid-gap: 1em;
     position: relative;
@@ -152,7 +149,6 @@ body::-webkit-scrollbar-thumb:hover {
     margin: auto;
     overflow: hidden;
     background: rgb(15, 15, 15);
-    background: rgb(14, 16, 140);
     display: grid;
     grid-gap: 0.1em;
     position: relative;
@@ -187,7 +183,6 @@ body::-webkit-scrollbar-thumb:hover {
     margin: auto;
     overflow: hidden;
     background: rgb(15, 15, 15);
-    background: rgb(139, 6, 110);
     display: grid;
     grid-gap: 0.2em;
     position: relative;
@@ -1859,7 +1854,7 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
 }
 .container_contact .container_contact_block {
-  width: 600px;
+  width: 550px;
   padding: 10px 0px;
   margin-left: 20px;
 }
@@ -1873,7 +1868,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: white;
 }
 .container_contact .container_contact_block_button {
-  margin-right: 100px;
+  margin-right: 60px;
   padding: 10px 60px;
   background: rgb(249, 51, 51);
   border: none;
@@ -1887,6 +1882,48 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
 }
 
+@media (min-width: 320px) and (max-width: 899px) {
+  .container_contact {
+    width: 100%;
+    padding: 100px 0px;
+    background: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: initial;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container_contact .container_contact_block {
+    width: 90%;
+    padding: 10px 0px;
+    margin-left: initial;
+    text-align: center;
+  }
+  .container_contact .container_contact_block .container_contact_block_title {
+    color: white;
+    font-size: 35px;
+    line-height: 38px;
+  }
+  .container_contact .container_contact_block .container_contact_block_parrafo {
+    margin-top: 20px;
+    color: white;
+  }
+  .container_contact .container_contact_block_button {
+    margin-top: 30px;
+    margin-right: initial;
+    padding: 10px 60px;
+    background: rgb(249, 51, 51);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.2s all ease-in;
+  }
+  .container_contact .container_contact_block_button:hover {
+    background: white;
+    color: rgb(15, 15, 15);
+    cursor: pointer;
+  }
+}
 .container_pagination {
   width: 100%;
   padding: 20px 0px;
@@ -1915,6 +1952,36 @@ body::-webkit-scrollbar-thumb:hover {
   color: rgb(249, 51, 51);
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .container_pagination {
+    width: 100%;
+    padding: 20px 0px;
+    background: rgb(15, 15, 15);
+  }
+  .container_pagination .container_pagination_ul {
+    width: 100%;
+    padding: 10px 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: initial;
+  }
+  .container_pagination .container_pagination_ul .container_pagination_ul_li {
+    width: auto;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  .container_pagination .container_pagination_ul .container_pagination_ul_li .li_enlace {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    transition: 0.1s all ease-out;
+  }
+  .container_pagination .container_pagination_ul .container_pagination_ul_li:hover .li_enlace {
+    color: rgb(249, 51, 51);
+  }
+}
 .container_footer {
   width: 100%;
   padding: 20px 0px;
@@ -1937,7 +2004,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: rgb(249, 51, 51);
 }
 .container_footer .container_footer_redes {
-  width: 150px;
+  width: 120px;
   padding: 5px 0px;
   display: flex;
   flex-direction: row;
@@ -1946,14 +2013,13 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
 }
 .container_footer .container_footer_redes .container_footer_redes_box .icon {
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(185, 185, 185);
 }
 .container_footer .container_footer_redes .container_footer_redes_box .icon:hover {
   color: rgb(249, 51, 51);
 }
 .container_footer .container_footer_detalle {
-  width: 280px;
   padding: 10px 0px;
   margin-right: 20px;
 }
@@ -1969,6 +2035,62 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 16px;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .container_footer {
+    width: 100%;
+    padding: 20px 0px;
+    background: rgba(28, 28, 28, 0.639);
+    display: flex;
+    flex-wrap: initial;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .container_footer .container_footer_logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: initial;
+  }
+  .container_footer .container_footer_logo .iconLogo {
+    font-size: 35px;
+    color: rgb(249, 51, 51);
+  }
+  .container_footer .container_footer_redes {
+    margin-top: 10px;
+    width: 120px;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container_footer .container_footer_redes .container_footer_redes_box .icon {
+    font-size: 20px;
+    color: rgb(185, 185, 185);
+  }
+  .container_footer .container_footer_redes .container_footer_redes_box .icon:hover {
+    color: rgb(249, 51, 51);
+  }
+  .container_footer .container_footer_detalle {
+    padding: 10px 0px;
+    margin-right: initial;
+  }
+  .container_footer .container_footer_detalle .container_footer_detalle_text {
+    font-size: 16px;
+    color: rgb(249, 51, 51);
+    margin-left: 5px;
+  }
+  .container_footer .container_footer_detalle span {
+    margin-left: 10px;
+    color: white;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+}
 .botonSubir {
   width: 45px;
   height: 45px;

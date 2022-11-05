@@ -31,3 +31,41 @@
         }
     }
 }
+
+
+
+
+
+@media (min-width:320px)  and (max-width:480px){
+    .container_pagination{
+        width: 100%;
+        padding: 20px 0px;
+        background: $color_negro_fuerte;
+        .container_pagination_ul{
+            width: 100%;
+            padding: 10px 0px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: initial;
+            .container_pagination_ul_li{
+                width: auto;
+                padding: 10px 0px;
+                text-align: center;
+                .li_enlace{
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: $color_enlaces;
+                    transition: 0.1s all ease-out;
+    
+                }
+                &:hover{
+                    .li_enlace{
+                        color: $color_rojo;
+                    }
+                }
+            }
+        }
+    }
+}
