@@ -66,7 +66,7 @@
     .gridYears{
     
         //padding:10px 0px;
-        //background: rgb(214, 97, 97);
+        //background: rgb(203, 24, 24);
         grid-area: gridYears;
     }
     .grid_BlockCounters{
@@ -167,7 +167,7 @@
 
 
 
-//amarillo
+//NARANJA
 @media (min-width:770px)  and (max-width:899px){
     .containerBase{ 
         width: 100%;
@@ -208,9 +208,9 @@
         margin: auto;
         overflow: hidden;
         background:$color_negro_fuerte;
-        background: rgb(6, 170, 36);
+        background: rgb(2, 128, 32);
         display: grid;
-        grid-gap: 0.1em;
+        grid-gap: 1em;
         position: relative;
         grid-template-columns:repeat(6,1fr);
         grid-template-rows: auto;
@@ -261,27 +261,35 @@
             "grid_pagination      grid_pagination"
             "grid_footer          grid_footer" ;
 
-    /// CONFORMAN EL SEGUNDO BLOQUE DE LA GRID////
-    .grid_UIDesing{
-        padding: 10px 0px;
-        //background: rgb(214, 97, 97);
-        grid-area: grid_UIDesing;
-    }
-    .grid_branding{
-        margin-top: initial;
-        padding:10px 0px;
-        //background: rgb(214, 97, 97);
-        grid-area: grid_branding;
-    }
-    .grid_productDesing{
-        margin-top: initial;
-        //background: rgb(214, 97, 97);
-        grid-area: grid_productDesing;
-    }
-    
+        /// CONFORMAN EL SEGUNDO BLOQUE DE LA GRID////
+        .grid_UIDesing{
+            padding: 10px 0px;
+            //background: rgb(214, 97, 97);
+            grid-area: grid_UIDesing;
+        }
+        .grid_branding{
+            margin-top: initial;
+            padding:10px 0px;
+            //background: rgb(214, 97, 97);
+            grid-area: grid_branding;
+        }
+        .grid_productDesing{
+            margin-top: initial;
+            padding: 10px 0px;
+            //background: rgb(214, 97, 97);
+            grid-area: grid_productDesing;
+        }
+
+
+         /// CONFORMAN EL TERCER BLOQUE DE LA GRID////
+        .gridYears{
+            margin-top: 30px;
+            //padding:10px 0px;
+            grid-area: gridYears;
+        }
+        
     }
 }
-
 
 
 
@@ -306,7 +314,8 @@
             "grid_UIDesing        grid_UIDesing"
             "grid_productDesing   grid_productDesing"
             "grid_branding        grid_branding"
-            "gridYears            grid_BlockCounters"
+            "gridYears            gridYears"
+            "grid_BlockCounters   grid_BlockCounters"
             "grid_feafureProyects grid_feafureProyects"
             "grid_vintage         grid_foodasa"
             "grid_accent          grid_mozalk"
@@ -314,6 +323,25 @@
             "grid_pagination      grid_pagination"
             "grid_footer          grid_footer" ;
 
+
+        /// CONFORMAN EL SEGUNDO BLOQUE DE LA GRID////
+        .grid_UIDesing{
+            padding: 10px 0px;
+            //background: rgb(214, 97, 97);
+            grid-area: grid_UIDesing;
+        }
+        .grid_branding{
+            margin-top: initial;
+            padding:10px 0px;
+            //background: rgb(214, 97, 97);
+            grid-area: grid_branding;
+        }
+        .grid_productDesing{
+            margin-top: initial;
+            padding: 10px 0px;
+            //background: rgb(214, 97, 97);
+            grid-area: grid_productDesing;
+        }
 
     }
 }
