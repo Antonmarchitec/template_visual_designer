@@ -22,6 +22,7 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    transition: 0.2s all;
                    .container_box60_number{
                         color: $color_rojo;  
                         font-size: 40px;
@@ -33,6 +34,15 @@
 
                    }
                 }
+                &:hover{
+                    .container_box60{
+                        background: rgb(216, 216, 216);
+                    }    
+                    .container_box60_parrafo{
+                        color: black;
+                    }
+                }
+
             }
 
             .subGrid_box08{
@@ -57,6 +67,14 @@
                        font-style: normal;
 
                    }
+                }
+                &:hover{
+                    .container_box60{
+                        background: rgb(216, 216, 216);
+                    }    
+                    .container_box60_parrafo{
+                        color: black;
+                    }
                 }
             }
 
@@ -83,6 +101,14 @@
 
                    }
                 }
+                &:hover{
+                    .container_box60{
+                        background: rgb(216, 216, 216);
+                    }    
+                    .container_box60_parrafo{
+                        color: black;
+                    }
+                }
             }
 
             .subGrid_box10{
@@ -107,6 +133,14 @@
                        font-style: normal;
 
                    }
+                }
+                &:hover{
+                    .container_box60{
+                        background: rgb(216, 216, 216);
+                    }    
+                    .container_box60_parrafo{
+                        color: black;
+                    }
                 }
             }
 
