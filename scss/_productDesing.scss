@@ -53,4 +53,202 @@
 
 
 
+@media (min-width:900px) and (max-width:1200px){
+    .containerProductDesing{
+        width: 95%;
+        height: 280px;
+        margin: auto;
+        padding: 20px;
+        background-color:$color_rojo;
+        .containerProductDesing_baseIcon{
+           width: 50px;
+           height: 50px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconProductDesing{
+                font-size: 35px;
+                color: $color_enlaces;
+            }
+        }
+        .containerProductDesing_text{
+            margin-top: 10px;
+            color:$color_enlaces;
+            font-weight: 300;
+            color: white;
+        }
+    
+        .containerProductDesing_vinculo{
+            margin-top: 10px;
+            color:$color_enlaces;
+            transition: 0.2s ease-in;
+            .iconVinculo{
+                margin-left: 5px;  
+                color:$color_enlaces;
+                transition: 0.2s ease-in;
+    
+            }
+        }
+    
+        &:hover{
+            .containerProductDesing_vinculo{
+                color:$color_negro;
+                cursor: pointer;
+                .iconVinculo{
+                    transform: translateX(10px);
+                    color: white;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+@media (min-width:770px) and (max-width:899px){
+    .containerProductDesing{
+        width: 95%;
+        height: 290px;
+        margin: auto;
+        padding: 10px 20px;
+        background-color:$color_rojo;
+        .containerProductDesing_baseIcon{
+           width: 50px;
+           height: 50px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconProductDesing{
+                font-size: 35px;
+                color: $color_enlaces;
+            }
+        }
+        .containerProductDesing_text{
+            margin-top: 10px;
+            color:$color_enlaces;
+            font-weight: 300;
+            color: white;
+        }
+    
+        .containerProductDesing_vinculo{
+            margin-top: 10px;
+            color:$color_enlaces;
+            transition: 0.2s ease-in;
+            .iconVinculo{
+                margin-left: 5px;  
+                color:$color_enlaces;
+                transition: 0.2s ease-in;
+    
+            }
+        }
+    
+        &:hover{
+            .containerProductDesing_vinculo{
+                color:$color_negro;
+                cursor: pointer;
+                .iconVinculo{
+                    transform: translateX(10px);
+                    color: white;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+@media (min-width:641px) and (max-width:769px){
+    .containerProductDesing{
+        width: 95%;
+        height: 290px;
+        margin: auto;
+        padding: 10px 20px;
+        background-color:$color_rojo;
+        .containerProductDesing_baseIcon{
+           width: 40px;
+           height: 40px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconProductDesing{
+                font-size: 30px;
+                color: $color_enlaces;
+            }
+        }
+        .containerProductDesing_text{
+            margin-top: 10px;
+            color:$color_enlaces;
+            font-weight: 300;
+            color: white;
+            font-size: 15px;
+        }
+    
+        .containerProductDesing_vinculo{
+            margin-top: 10px;
+            color:$color_enlaces;
+            transition: 0.2s ease-in;
+            font-size: 16px;
+            .iconVinculo{
+                margin-left: 5px;  
+                color:$color_enlaces;
+                transition: 0.2s ease-in;
+    
+            }
+        }
+        
+    }
+}
+
+
+
+
+@media (min-width:320px)  and (max-width:480px){
+    .containerProductDesing{
+        width: 95%;
+        height: 250px;
+        margin: auto;
+        padding: 20px;
+        background-color:$color_rojo;
+        .containerProductDesing_baseIcon{
+           width: 40px;
+           height: 40px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconProductDesing{
+                font-size: 30px;
+                color: $color_enlaces;
+            }
+        }
+        .containerProductDesing_text{
+            margin-top: 10px;
+            color:$color_enlaces;
+            font-weight: 300;
+            color: white;
+            font-size: 15px;
+        }
+    
+        .containerProductDesing_vinculo{
+            margin-top: 10px;
+            color:$color_enlaces;
+            transition: 0.2s ease-in;
+            font-size: 16px;
+            .iconVinculo{
+                margin-left: 5px;  
+                color:$color_enlaces;
+                transition: 0.2s ease-in;
+    
+            }
+        }
+        
+    } 
+}
+
+
+
 

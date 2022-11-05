@@ -52,3 +52,209 @@
 }
 
 
+
+
+
+@media (min-width:900px) and (max-width:1200px){
+    .containerUIDesing{
+        width: 95%;
+        height: 280px;
+        margin: auto;
+        padding: 20px;
+        background-color:$color_negro;
+        transition: 0.5s all;
+        .containerUIDesing_baseIcon{
+           width: 50px;
+           height: 50px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconUIDesing{
+                font-size: 35px;
+                color: $color_rojo;
+            }
+        }
+        .containerUIDesing_text{
+            margin-top: 10px;
+            color:$color_enlaces;
+            font-weight: 300;
+            color: $color_grey;
+        }
+    
+        .containerUIDesing_vinculo{
+            margin-top: 10px;
+            color:white;
+            font-size: 18px;
+            transition: 0.2s all ease-in;
+            .iconVinculo{  
+                color:$color_rojo;
+                margin-left: 5px;
+                transition: 0.2s all ease-in;
+    
+            }
+        }
+        
+    
+        &:hover{
+            .containerUIDesing_vinculo{
+                color:$color_rojo;
+                cursor: pointer;
+                .iconVinculo{
+                    transform: translateX(10px);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width:770px) and (max-width:899px){
+    .containerUIDesing{
+        width: 95%;
+        height: 290px;
+        margin: auto;
+        padding: 15px 20px;
+        background-color:$color_negro;
+        transition: 0.5s all;
+        .containerUIDesing_baseIcon{
+           width: 50px;
+           height: 50px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconUIDesing{
+                font-size: 35px;
+                color: $color_rojo;
+            }
+        }
+        .containerUIDesing_text{
+            margin-top: 10px;
+            color:$color_enlaces;
+            font-weight: 300;
+            color: $color_grey;
+        }
+    
+        .containerUIDesing_vinculo{
+            margin-top: 10px;
+            color:white;
+            font-size: 18px;
+            transition: 0.2s all ease-in;
+            .iconVinculo{  
+                color:$color_rojo;
+                margin-left: 5px;
+                transition: 0.2s all ease-in;
+    
+            }
+        }
+        
+    
+        &:hover{
+            .containerUIDesing_vinculo{
+                color:$color_rojo;
+                cursor: pointer;
+                .iconVinculo{
+                    transform: translateX(10px);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width:641px) and (max-width:769px){
+    .containerUIDesing{
+        width: 95%;
+        height: 290px;
+        margin: auto;
+        padding: 15px 20px;
+        background-color:$color_negro;
+        transition: 0.5s all;
+        .containerUIDesing_baseIcon{
+           width: 40px;
+           height: 40px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconUIDesing{
+                font-size: 30px;
+                color: $color_rojo;
+            }
+        }
+
+        .containerUIDesing_text{
+            margin-top: 10px;
+            color:$color_enlaces;
+            font-weight: 300;
+            color: $color_grey;
+            font-size: 15px;
+        }
+    
+        .containerUIDesing_vinculo{
+            margin-top: 10px;
+            color:white;
+            font-size: 16px;
+            transition: 0.2s all ease-in;
+            .iconVinculo{  
+                color:$color_rojo;
+                margin-left: 5px;
+                transition: 0.2s all ease-in;
+    
+            }
+        }
+        
+    }
+}
+
+
+
+
+@media (min-width:320px)  and (max-width:480px){
+    .containerUIDesing{
+        width: 95%;
+        height: 250px;
+        margin: auto;
+        padding: 20px;
+        background-color:$color_negro;
+        transition: 0.5s all;
+        .containerUIDesing_baseIcon{
+           width: 40px;
+           height: 40px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconUIDesing{
+                font-size: 30px;
+                color: $color_rojo;
+            }
+        }
+
+        .containerUIDesing_text{
+            margin-top: 10px;
+            color:$color_enlaces;
+            font-weight: 300;
+            color: $color_grey;
+            font-size: 15px;
+        }
+    
+        .containerUIDesing_vinculo{
+            margin-top: 10px;
+            color:white;
+            font-size: 16px;
+            transition: 0.2s all ease-in;
+            .iconVinculo{  
+                color:$color_rojo;
+                margin-left: 5px;
+                transition: 0.2s all ease-in;
+    
+            }
+        }
+        
+    }
+}

@@ -135,9 +135,9 @@ body::-webkit-scrollbar-thumb:hover {
     margin: auto;
     overflow: hidden;
     background: rgb(15, 15, 15);
-    background: rgb(6, 87, 134);
+    background: rgb(6, 170, 36);
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 0.1em;
     position: relative;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
@@ -154,11 +154,24 @@ body::-webkit-scrollbar-thumb:hover {
     background: rgb(15, 15, 15);
     background: rgb(14, 16, 140);
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 0.1em;
     position: relative;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "grid_navbar           grid_navbar           grid_navbar          grid_navbar          grid_navbar          grid_navbar" "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding" "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters" "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" "grid_vintage          grid_vintage          grid_vintage         grid_foodasa         grid_foodasa         grid_foodasa" "grid_accent           grid_accent           grid_accent          grid_mozalk          grid_mozalk          grid_mozalk" "grid_contact          grid_contact          grid_contact         grid_contact         grid_contact         grid_contact" "grid_pagination       grid_pagination       grid_pagination      grid_pagination      grid_pagination      grid_pagination" "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer";
+    grid-template-areas: "grid_navbar          grid_navbar" "grid_Header          grid_Header" "grid_UIDesing        grid_UIDesing" "grid_productDesing   grid_productDesing" "grid_branding        grid_branding" "gridYears            grid_BlockCounters" "grid_feafureProyects grid_feafureProyects" "grid_vintage         grid_foodasa" "grid_accent          grid_mozalk" "grid_contact         grid_contact" "grid_pagination      grid_pagination" "grid_footer          grid_footer";
+  }
+  .containerBase .grid_UIDesing {
+    padding: 10px 0px;
+    grid-area: grid_UIDesing;
+  }
+  .containerBase .grid_branding {
+    margin-top: initial;
+    padding: 10px 0px;
+    grid-area: grid_branding;
+  }
+  .containerBase .grid_productDesing {
+    margin-top: initial;
+    grid-area: grid_productDesing;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -169,13 +182,13 @@ body::-webkit-scrollbar-thumb:hover {
     margin: auto;
     overflow: hidden;
     background: rgb(15, 15, 15);
-    background: rgb(140, 3, 133);
+    background: rgb(139, 6, 110);
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 0.1em;
     position: relative;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "grid_navbar           grid_navbar           grid_navbar          grid_navbar          grid_navbar          grid_navbar" "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding" "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters" "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" "grid_vintage          grid_vintage          grid_vintage         grid_foodasa         grid_foodasa         grid_foodasa" "grid_accent           grid_accent           grid_accent          grid_mozalk          grid_mozalk          grid_mozalk" "grid_contact          grid_contact          grid_contact         grid_contact         grid_contact         grid_contact" "grid_pagination       grid_pagination       grid_pagination      grid_pagination      grid_pagination      grid_pagination" "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer";
+    grid-template-areas: "grid_navbar          grid_navbar" "grid_Header          grid_Header" "grid_UIDesing        grid_UIDesing" "grid_productDesing   grid_productDesing" "grid_branding        grid_branding" "gridYears            grid_BlockCounters" "grid_feafureProyects grid_feafureProyects" "grid_vintage         grid_foodasa" "grid_accent          grid_mozalk" "grid_contact         grid_contact" "grid_pagination      grid_pagination" "grid_footer          grid_footer";
   }
 }
 .containerSection_navbar {
@@ -592,6 +605,176 @@ body::-webkit-scrollbar-thumb:hover {
   color: white;
 }
 
+@media (min-width: 900px) and (max-width: 1200px) {
+  .containerUIDesing {
+    width: 95%;
+    height: 280px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(28, 28, 28);
+    transition: 0.5s all;
+  }
+  .containerUIDesing .containerUIDesing_baseIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerUIDesing .containerUIDesing_baseIcon .iconUIDesing {
+    font-size: 35px;
+    color: rgb(249, 51, 51);
+  }
+  .containerUIDesing .containerUIDesing_text {
+    margin-top: 10px;
+    color: white;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+  }
+  .containerUIDesing .containerUIDesing_vinculo {
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    transition: 0.2s all ease-in;
+  }
+  .containerUIDesing .containerUIDesing_vinculo .iconVinculo {
+    color: rgb(249, 51, 51);
+    margin-left: 5px;
+    transition: 0.2s all ease-in;
+  }
+  .containerUIDesing:hover .containerUIDesing_vinculo {
+    color: rgb(249, 51, 51);
+    cursor: pointer;
+  }
+  .containerUIDesing:hover .containerUIDesing_vinculo .iconVinculo {
+    transform: translateX(10px);
+    color: white;
+  }
+}
+@media (min-width: 770px) and (max-width: 899px) {
+  .containerUIDesing {
+    width: 95%;
+    height: 290px;
+    margin: auto;
+    padding: 15px 20px;
+    background-color: rgb(28, 28, 28);
+    transition: 0.5s all;
+  }
+  .containerUIDesing .containerUIDesing_baseIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerUIDesing .containerUIDesing_baseIcon .iconUIDesing {
+    font-size: 35px;
+    color: rgb(249, 51, 51);
+  }
+  .containerUIDesing .containerUIDesing_text {
+    margin-top: 10px;
+    color: white;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+  }
+  .containerUIDesing .containerUIDesing_vinculo {
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    transition: 0.2s all ease-in;
+  }
+  .containerUIDesing .containerUIDesing_vinculo .iconVinculo {
+    color: rgb(249, 51, 51);
+    margin-left: 5px;
+    transition: 0.2s all ease-in;
+  }
+  .containerUIDesing:hover .containerUIDesing_vinculo {
+    color: rgb(249, 51, 51);
+    cursor: pointer;
+  }
+  .containerUIDesing:hover .containerUIDesing_vinculo .iconVinculo {
+    transform: translateX(10px);
+    color: white;
+  }
+}
+@media (min-width: 641px) and (max-width: 769px) {
+  .containerUIDesing {
+    width: 95%;
+    height: 290px;
+    margin: auto;
+    padding: 15px 20px;
+    background-color: rgb(28, 28, 28);
+    transition: 0.5s all;
+  }
+  .containerUIDesing .containerUIDesing_baseIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerUIDesing .containerUIDesing_baseIcon .iconUIDesing {
+    font-size: 30px;
+    color: rgb(249, 51, 51);
+  }
+  .containerUIDesing .containerUIDesing_text {
+    margin-top: 10px;
+    color: white;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+    font-size: 15px;
+  }
+  .containerUIDesing .containerUIDesing_vinculo {
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    transition: 0.2s all ease-in;
+  }
+  .containerUIDesing .containerUIDesing_vinculo .iconVinculo {
+    color: rgb(249, 51, 51);
+    margin-left: 5px;
+    transition: 0.2s all ease-in;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .containerUIDesing {
+    width: 95%;
+    height: 250px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(28, 28, 28);
+    transition: 0.5s all;
+  }
+  .containerUIDesing .containerUIDesing_baseIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerUIDesing .containerUIDesing_baseIcon .iconUIDesing {
+    font-size: 30px;
+    color: rgb(249, 51, 51);
+  }
+  .containerUIDesing .containerUIDesing_text {
+    margin-top: 10px;
+    color: white;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+    font-size: 15px;
+  }
+  .containerUIDesing .containerUIDesing_vinculo {
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    transition: 0.2s all ease-in;
+  }
+  .containerUIDesing .containerUIDesing_vinculo .iconVinculo {
+    color: rgb(249, 51, 51);
+    margin-left: 5px;
+    transition: 0.2s all ease-in;
+  }
+}
 .containerProductDesing {
   width: 95%;
   height: 300px;
@@ -635,6 +818,170 @@ body::-webkit-scrollbar-thumb:hover {
   color: white;
 }
 
+@media (min-width: 900px) and (max-width: 1200px) {
+  .containerProductDesing {
+    width: 95%;
+    height: 280px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(249, 51, 51);
+  }
+  .containerProductDesing .containerProductDesing_baseIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerProductDesing .containerProductDesing_baseIcon .iconProductDesing {
+    font-size: 35px;
+    color: white;
+  }
+  .containerProductDesing .containerProductDesing_text {
+    margin-top: 10px;
+    color: white;
+    font-weight: 300;
+    color: white;
+  }
+  .containerProductDesing .containerProductDesing_vinculo {
+    margin-top: 10px;
+    color: white;
+    transition: 0.2s ease-in;
+  }
+  .containerProductDesing .containerProductDesing_vinculo .iconVinculo {
+    margin-left: 5px;
+    color: white;
+    transition: 0.2s ease-in;
+  }
+  .containerProductDesing:hover .containerProductDesing_vinculo {
+    color: rgb(28, 28, 28);
+    cursor: pointer;
+  }
+  .containerProductDesing:hover .containerProductDesing_vinculo .iconVinculo {
+    transform: translateX(10px);
+    color: white;
+  }
+}
+@media (min-width: 770px) and (max-width: 899px) {
+  .containerProductDesing {
+    width: 95%;
+    height: 290px;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: rgb(249, 51, 51);
+  }
+  .containerProductDesing .containerProductDesing_baseIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerProductDesing .containerProductDesing_baseIcon .iconProductDesing {
+    font-size: 35px;
+    color: white;
+  }
+  .containerProductDesing .containerProductDesing_text {
+    margin-top: 10px;
+    color: white;
+    font-weight: 300;
+    color: white;
+  }
+  .containerProductDesing .containerProductDesing_vinculo {
+    margin-top: 10px;
+    color: white;
+    transition: 0.2s ease-in;
+  }
+  .containerProductDesing .containerProductDesing_vinculo .iconVinculo {
+    margin-left: 5px;
+    color: white;
+    transition: 0.2s ease-in;
+  }
+  .containerProductDesing:hover .containerProductDesing_vinculo {
+    color: rgb(28, 28, 28);
+    cursor: pointer;
+  }
+  .containerProductDesing:hover .containerProductDesing_vinculo .iconVinculo {
+    transform: translateX(10px);
+    color: white;
+  }
+}
+@media (min-width: 641px) and (max-width: 769px) {
+  .containerProductDesing {
+    width: 95%;
+    height: 290px;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: rgb(249, 51, 51);
+  }
+  .containerProductDesing .containerProductDesing_baseIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerProductDesing .containerProductDesing_baseIcon .iconProductDesing {
+    font-size: 30px;
+    color: white;
+  }
+  .containerProductDesing .containerProductDesing_text {
+    margin-top: 10px;
+    color: white;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
+  }
+  .containerProductDesing .containerProductDesing_vinculo {
+    margin-top: 10px;
+    color: white;
+    transition: 0.2s ease-in;
+    font-size: 16px;
+  }
+  .containerProductDesing .containerProductDesing_vinculo .iconVinculo {
+    margin-left: 5px;
+    color: white;
+    transition: 0.2s ease-in;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .containerProductDesing {
+    width: 95%;
+    height: 250px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(249, 51, 51);
+  }
+  .containerProductDesing .containerProductDesing_baseIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerProductDesing .containerProductDesing_baseIcon .iconProductDesing {
+    font-size: 30px;
+    color: white;
+  }
+  .containerProductDesing .containerProductDesing_text {
+    margin-top: 10px;
+    color: white;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
+  }
+  .containerProductDesing .containerProductDesing_vinculo {
+    margin-top: 10px;
+    color: white;
+    transition: 0.2s ease-in;
+    font-size: 16px;
+  }
+  .containerProductDesing .containerProductDesing_vinculo .iconVinculo {
+    margin-left: 5px;
+    color: white;
+    transition: 0.2s ease-in;
+  }
+}
 .containerBranding {
   width: 95%;
   height: 300px;
@@ -678,6 +1025,170 @@ body::-webkit-scrollbar-thumb:hover {
   color: white;
 }
 
+@media (min-width: 900px) and (max-width: 1200px) {
+  .containerBranding {
+    width: 95%;
+    height: 280px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(28, 28, 28);
+  }
+  .containerBranding .containerBranding_baseIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerBranding .containerBranding_baseIcon .iconBranding {
+    margin-left: 5px;
+    font-size: 35px;
+    color: rgb(249, 51, 51);
+  }
+  .containerBranding .containerBranding_text {
+    margin-top: 10px;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+  }
+  .containerBranding .containerBranding_vinculo {
+    margin-top: 10px;
+    color: white;
+    transition: 0.2s all ease-in;
+  }
+  .containerBranding .containerBranding_vinculo .iconVinculo {
+    margin-left: 5px;
+    color: rgb(249, 51, 51);
+    transition: 0.2s all ease-in;
+  }
+  .containerBranding:hover .containerBranding_vinculo {
+    color: rgb(249, 51, 51);
+    cursor: pointer;
+  }
+  .containerBranding:hover .containerBranding_vinculo .iconVinculo {
+    transform: translateX(10px);
+    color: white;
+  }
+}
+@media (min-width: 770px) and (max-width: 899px) {
+  .containerBranding {
+    width: 95%;
+    height: 290px;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: rgb(28, 28, 28);
+  }
+  .containerBranding .containerBranding_baseIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerBranding .containerBranding_baseIcon .iconBranding {
+    margin-left: 5px;
+    font-size: 35px;
+    color: rgb(249, 51, 51);
+  }
+  .containerBranding .containerBranding_text {
+    margin-top: 10px;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+  }
+  .containerBranding .containerBranding_vinculo {
+    margin-top: 10px;
+    color: white;
+    transition: 0.2s all ease-in;
+  }
+  .containerBranding .containerBranding_vinculo .iconVinculo {
+    margin-left: 5px;
+    color: rgb(249, 51, 51);
+    transition: 0.2s all ease-in;
+  }
+  .containerBranding:hover .containerBranding_vinculo {
+    color: rgb(249, 51, 51);
+    cursor: pointer;
+  }
+  .containerBranding:hover .containerBranding_vinculo .iconVinculo {
+    transform: translateX(10px);
+    color: white;
+  }
+}
+@media (min-width: 641px) and (max-width: 769px) {
+  .containerBranding {
+    width: 95%;
+    height: 290px;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: rgb(28, 28, 28);
+  }
+  .containerBranding .containerBranding_baseIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerBranding .containerBranding_baseIcon .iconBranding {
+    margin-left: 5px;
+    font-size: 30px;
+    color: rgb(249, 51, 51);
+  }
+  .containerBranding .containerBranding_text {
+    margin-top: 10px;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+    font-size: 15px;
+  }
+  .containerBranding .containerBranding_vinculo {
+    margin-top: 10px;
+    color: white;
+    transition: 0.2s all ease-in;
+    font-size: 16px;
+  }
+  .containerBranding .containerBranding_vinculo .iconVinculo {
+    margin-left: 5px;
+    color: rgb(249, 51, 51);
+    transition: 0.2s all ease-in;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .containerBranding {
+    width: 95%;
+    height: 250px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(28, 28, 28);
+  }
+  .containerBranding .containerBranding_baseIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerBranding .containerBranding_baseIcon .iconBranding {
+    margin-left: 5px;
+    font-size: 30px;
+    color: rgb(249, 51, 51);
+  }
+  .containerBranding .containerBranding_text {
+    margin-top: 10px;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+    font-size: 15px;
+  }
+  .containerBranding .containerBranding_vinculo {
+    margin-top: 10px;
+    color: white;
+    transition: 0.2s all ease-in;
+    font-size: 16px;
+  }
+  .containerBranding .containerBranding_vinculo .iconVinculo {
+    margin-left: 5px;
+    color: rgb(249, 51, 51);
+    transition: 0.2s all ease-in;
+  }
+}
 .containerYears {
   width: 90%;
   margin: auto;

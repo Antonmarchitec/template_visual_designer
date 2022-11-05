@@ -134,7 +134,7 @@
 
 
 
-
+//VERDE LIMON
 @media (min-width:900px) and (max-width:1200px){
     .containerBase{ 
         width: 100%;
@@ -199,7 +199,7 @@
 
 
 
-
+//VERDE
 @media (min-width:641px)  and (max-width:769px){
     .containerBase{ 
         width: 100%;
@@ -208,9 +208,9 @@
         margin: auto;
         overflow: hidden;
         background:$color_negro_fuerte;
-        background: rgb(6, 87, 134);
+        background: rgb(6, 170, 36);
         display: grid;
-        grid-gap: 1em;
+        grid-gap: 0.1em;
         position: relative;
         grid-template-columns:repeat(6,1fr);
         grid-template-rows: auto;
@@ -232,7 +232,7 @@
 
 
 
-
+//AZUL
 @media (min-width:481px)  and (max-width:640px){
     .containerBase{ 
         width: 100%;
@@ -243,29 +243,49 @@
         background:$color_negro_fuerte;
         background: rgb(14, 16, 140);
         display: grid;
-        grid-gap: 1em;
+        grid-gap:0.1em;
         position: relative;
-        grid-template-columns:repeat(6,1fr);
+        grid-template-columns:repeat(2,1fr);
         grid-template-rows: auto;
-        grid-template-areas: "grid_navbar           grid_navbar           grid_navbar          grid_navbar          grid_navbar          grid_navbar"
-                             "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
-                             "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding"
-                             "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
-                             "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" 
-                             "grid_vintage          grid_vintage          grid_vintage         grid_foodasa         grid_foodasa         grid_foodasa"
-                             "grid_accent           grid_accent           grid_accent          grid_mozalk          grid_mozalk          grid_mozalk"
-                             "grid_contact          grid_contact          grid_contact         grid_contact         grid_contact         grid_contact"
-                             "grid_pagination       grid_pagination       grid_pagination      grid_pagination      grid_pagination      grid_pagination" 
-                             "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer"
-                             ;
-        
+        grid-template-areas:
+            "grid_navbar          grid_navbar"
+            "grid_Header          grid_Header"
+            "grid_UIDesing        grid_UIDesing"
+            "grid_productDesing   grid_productDesing"
+            "grid_branding        grid_branding"
+            "gridYears            grid_BlockCounters"
+            "grid_feafureProyects grid_feafureProyects"
+            "grid_vintage         grid_foodasa"
+            "grid_accent          grid_mozalk"
+            "grid_contact         grid_contact"
+            "grid_pagination      grid_pagination"
+            "grid_footer          grid_footer" ;
+
+    /// CONFORMAN EL SEGUNDO BLOQUE DE LA GRID////
+    .grid_UIDesing{
+        padding: 10px 0px;
+        //background: rgb(214, 97, 97);
+        grid-area: grid_UIDesing;
+    }
+    .grid_branding{
+        margin-top: initial;
+        padding:10px 0px;
+        //background: rgb(214, 97, 97);
+        grid-area: grid_branding;
+    }
+    .grid_productDesing{
+        margin-top: initial;
+        //background: rgb(214, 97, 97);
+        grid-area: grid_productDesing;
+    }
+    
     }
 }
 
 
 
 
-
+//GUINDO
 @media (min-width:320px)  and (max-width:480px){
     .containerBase{ 
         width: 100%;
@@ -274,23 +294,26 @@
         margin: auto;
         overflow: hidden;
         background:$color_negro_fuerte;
-        background: rgb(140, 3, 133);
+        background: rgb(139, 6, 110);
         display: grid;
-        grid-gap: 1em;
+        grid-gap:0.1em;
         position: relative;
-        grid-template-columns:repeat(6,1fr);
+        grid-template-columns:repeat(2,1fr);
         grid-template-rows: auto;
-        grid-template-areas: "grid_navbar           grid_navbar           grid_navbar          grid_navbar          grid_navbar          grid_navbar"
-                             "grid_Header           grid_Header           grid_Header          grid_Header          grid_Header          grid_Header" 
-                             "grid_UIDesing         grid_UIDesing         grid_productDesing   grid_productDesing   grid_branding        grid_branding"
-                             "gridYears             gridYears             grid_BlockCounters   grid_BlockCounters   grid_BlockCounters   grid_BlockCounters"
-                             "grid_feafureProyects  grid_feafureProyects  grid_feafureProyects grid_feafureProyects grid_feafureProyects grid_feafureProyects" 
-                             "grid_vintage          grid_vintage          grid_vintage         grid_foodasa         grid_foodasa         grid_foodasa"
-                             "grid_accent           grid_accent           grid_accent          grid_mozalk          grid_mozalk          grid_mozalk"
-                             "grid_contact          grid_contact          grid_contact         grid_contact         grid_contact         grid_contact"
-                             "grid_pagination       grid_pagination       grid_pagination      grid_pagination      grid_pagination      grid_pagination" 
-                             "grid_footer           grid_footer           grid_footer          grid_footer          grid_footer          grid_footer"
-                             ;
-        
+        grid-template-areas:
+            "grid_navbar          grid_navbar"
+            "grid_Header          grid_Header"
+            "grid_UIDesing        grid_UIDesing"
+            "grid_productDesing   grid_productDesing"
+            "grid_branding        grid_branding"
+            "gridYears            grid_BlockCounters"
+            "grid_feafureProyects grid_feafureProyects"
+            "grid_vintage         grid_foodasa"
+            "grid_accent          grid_mozalk"
+            "grid_contact         grid_contact"
+            "grid_pagination      grid_pagination"
+            "grid_footer          grid_footer" ;
+
+
     }
 }

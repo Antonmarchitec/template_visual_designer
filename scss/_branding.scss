@@ -51,3 +51,196 @@
 
 
 
+
+@media (min-width:900px) and (max-width:1200px){
+    .containerBranding{
+        width: 95%;
+        height: 280px;
+        margin: auto;
+        padding: 20px;
+        background-color:$color_negro;
+        .containerBranding_baseIcon{
+           width: 50px;
+           height: 50px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconBranding{
+                margin-left: 5px;
+                font-size: 35px;
+                color: $color_rojo;
+            }
+        }
+        .containerBranding_text{
+            margin-top: 10px;
+            font-weight: 300;
+            color: $color_grey;
+        }
+    
+        .containerBranding_vinculo{
+            margin-top: 10px;
+            color:white;
+            transition: 0.2s all ease-in;
+            .iconVinculo{  
+                margin-left: 5px;
+                color:$color_rojo;
+                transition: 0.2s all ease-in;
+    
+            }
+        }
+    
+        &:hover{
+            .containerBranding_vinculo{
+                color:$color_rojo;
+                cursor: pointer;
+                .iconVinculo{
+                    transform: translateX(10px);
+                    color: white;
+                }
+            } 
+            
+        }
+    }
+    
+}
+
+
+
+@media (min-width:770px) and (max-width:899px){
+    .containerBranding{
+        width: 95%;
+        height: 290px;
+        margin: auto;
+        padding: 10px 20px;
+        background-color:$color_negro;
+        .containerBranding_baseIcon{
+           width: 50px;
+           height: 50px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconBranding{
+                margin-left: 5px;
+                font-size: 35px;
+                color: $color_rojo;
+            }
+        }
+        .containerBranding_text{
+            margin-top: 10px;
+            font-weight: 300;
+            color: $color_grey;
+        }
+    
+        .containerBranding_vinculo{
+            margin-top: 10px;
+            color:white;
+            transition: 0.2s all ease-in;
+            .iconVinculo{  
+                margin-left: 5px;
+                color:$color_rojo;
+                transition: 0.2s all ease-in;
+    
+            }
+        }
+    
+        &:hover{
+            .containerBranding_vinculo{
+                color:$color_rojo;
+                cursor: pointer;
+                .iconVinculo{
+                    transform: translateX(10px);
+                    color: white;
+                }
+            } 
+            
+        }
+    }
+}
+
+
+
+@media (min-width:641px) and (max-width:769px){
+    .containerBranding{
+        width: 95%;
+        height: 290px;
+        margin: auto;
+        padding: 10px 20px;
+        background-color:$color_negro;
+        .containerBranding_baseIcon{
+           width: 40px;
+           height: 40px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconBranding{
+                margin-left: 5px;
+                font-size: 30px;
+                color: $color_rojo;
+            }
+        }
+        .containerBranding_text{
+            margin-top: 10px;
+            font-weight: 300;
+            color: $color_grey;
+            font-size: 15px;
+        }
+    
+        .containerBranding_vinculo{
+            margin-top: 10px;
+            color:white;
+            transition: 0.2s all ease-in;
+            font-size: 16px;
+            .iconVinculo{  
+                margin-left: 5px;
+                color:$color_rojo;
+                transition: 0.2s all ease-in;
+    
+            }
+        }
+
+    }
+}
+
+
+
+@media (min-width:320px)  and (max-width:480px){
+    .containerBranding{
+        width: 95%;
+        height: 250px;
+        margin: auto;
+        padding: 20px;
+        background-color:$color_negro;
+        .containerBranding_baseIcon{
+           width: 40px;
+           height: 40px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .iconBranding{
+                margin-left: 5px;
+                font-size: 30px;
+                color: $color_rojo;
+            }
+        }
+        .containerBranding_text{
+            margin-top: 10px;
+            font-weight: 300;
+            color: $color_grey;
+            font-size: 15px;
+        }
+    
+        .containerBranding_vinculo{
+            margin-top: 10px;
+            color:white;
+            transition: 0.2s all ease-in;
+            font-size: 16px;
+            .iconVinculo{  
+                margin-left: 5px;
+                color:$color_rojo;
+                transition: 0.2s all ease-in;
+    
+            }
+        }
+
+    }
+}
