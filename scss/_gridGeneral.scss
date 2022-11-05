@@ -304,7 +304,7 @@
         background:$color_negro_fuerte;
         background: rgb(139, 6, 110);
         display: grid;
-        grid-gap:0.1em;
+        grid-gap:0.2em;
         position: relative;
         grid-template-columns:repeat(2,1fr);
         grid-template-rows: auto;
@@ -317,8 +317,10 @@
             "gridYears            gridYears"
             "grid_BlockCounters   grid_BlockCounters"
             "grid_feafureProyects grid_feafureProyects"
-            "grid_vintage         grid_foodasa"
-            "grid_accent          grid_mozalk"
+            "grid_vintage         grid_vintage"
+            "grid_foodasa         grid_foodasa"
+            "grid_accent          grid_accent"
+            "grid_mozalk          grid_mozalk"
             "grid_contact         grid_contact"
             "grid_pagination      grid_pagination"
             "grid_footer          grid_footer" ;

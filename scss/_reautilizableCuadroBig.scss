@@ -25,6 +25,7 @@
         margin-top: 5px;
         color: $color_enlaces;
     }
+
     .containerUIDesing_vinculo{
         margin-top: 5px;
         color: $color_rojo;
@@ -36,6 +37,7 @@
             opacity: 0;
         }
     }
+
     &:hover{
         .containerUIDesing_vinculo{
             cursor: pointer;
@@ -46,5 +48,121 @@
             opacity: 1;
         }
     }
+}
+
+
+
+
+@media (min-width:481px)  and (max-width:769px){
+    .container_cuadroBig{
+        width: 100%;
+        height: initial;
+        padding:30px 10px;
+        background: $color_negro_fuerte;
+        .container_cuadroBig_box{
+            width:100%;
+            height: 300px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           .container_cuadroBig_box_image{
+               width: 90%;
+               height: 230px;
+               box-shadow: 0px 0px 10px black;
+               border-radius: 5px;
+           } 
+        }
+    
+        .container_cuadroBig_title{
+            margin-top: 5px;
+            color: $color_enlaces;
+        }
+    
+        .containerUIDesing_vinculo{
+            margin-top: 2px;
+            color: $color_rojo;
+            font-size: 16px;
+            font-weight: $font_delgada;
+            .iconVinculo{
+                margin-left: 5px;
+                color: $color_rojo;
+                transform: translateX(-20px);
+                transition: 0.3s all;
+                opacity: 0;
+            }
+        }
+    
+        &:hover{
+            .containerUIDesing_vinculo{
+                cursor: pointer;
+            }
+            .iconVinculo{
+                color: white;
+                transform: translateX(10px);
+                opacity: 1;
+            }
+        }
+    }
     
 }
+
+
+
+
+
+@media (min-width:320px)  and (max-width:480px){
+    .container_cuadroBig{
+        width: 100%;
+        height: initial;
+        padding:30px 10px;
+        background: $color_negro_fuerte;
+        .container_cuadroBig_box{
+            width:100%;
+            height: 300px;
+            margin: initial;
+            display:initial ;
+            justify-content:initial;
+            align-items: initial;
+           .container_cuadroBig_box_image{
+               width: 100%;
+               height: 230px;
+               box-shadow: 0px 0px 10px black;
+               border-radius: 5px;
+           } 
+        }
+    
+        .container_cuadroBig_title{
+            margin-top: 10px;
+            color: $color_enlaces;
+        }
+    
+        .containerUIDesing_vinculo{
+            margin-top: 2px;
+            color: $color_rojo;
+            font-size: 16px;
+            font-weight: $font_delgada;
+            .iconVinculo{
+                margin-left: 5px;
+                color: $color_rojo;
+                transform: translateX(-20px);
+                transition: 0.3s all;
+                opacity: 0;
+            }
+        }
+    
+        &:hover{
+            .containerUIDesing_vinculo{
+                cursor: pointer;
+            }
+            .iconVinculo{
+                color: white;
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+    }
+    
+}
+
+

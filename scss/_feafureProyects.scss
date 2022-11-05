@@ -2,11 +2,10 @@
 
 .container_feafureProyects{
         width: 100%;
-        padding: 50px 0px;
+        padding: 50px 30px;
         background:$color_negro_fuerte;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     .container_feafureProyects_base{
@@ -36,6 +35,49 @@
         background: white;
         color: $color_negro;
         cursor: pointer;
+    }
+}
+
+
+
+
+
+
+@media (min-width:320px)  and (max-width:769px){
+    .container_feafureProyects{
+        width: 100%;
+        padding: 50px 20px;
+        background:$color_negro_fuerte;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .container_feafureProyects_base{
+            width: 100%;
+            padding: 10px 0px;
+            margin-left: initial;
+            text-align: center;
+                .container_feafureProyects_base_title{
+                color: $color_enlaces;
+                font-size: 30px;
+                }
+                .container_feafureProyects_base_subtitle{
+                color: $color_enlaces;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                }
+        }
+
+        .container_feafureProyects_base_button{
+            width: 200px;
+            padding: 10px 30px;
+            margin-right: initial;
+            margin-top: 20px;
+            background: $color_rojo;
+            color: $color_enlaces;
+            border: none;
+        }
     }
 
 }
