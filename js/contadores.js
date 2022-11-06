@@ -1,31 +1,20 @@
 
-let progressCont = document.querySelector("#years")
-let progressStart = 0
+let speed = 2000
 let progressEnd = 20
-let speed = 100
+let progressStart = 0
+let contYears = document.querySelector("#gridYears")
+
 
 
 
 let progress =  setInterval(() =>{
     progressStart = progressStart + 1
-    progressCont.textContent = progressStart
-
+    contYears.textContent = progressStart
     if(progressStart == progressEnd){
         clearInterval(progress)
-    }
+        contYears.style.background = "yellow"
+    }   
 }, speed)
-
-
-/*
-document.addEventListener("scroll", () =>{
-    let positionScroll = document.documentElement.scrollTop
-    //console.log(positionScroll)
-    let positionElementYear = gridYears.offsetTop   //1294
-    //console.log(positionElementYear)
-    if(positionScroll > positionElementYear - 450){
-        //console.log("PARAR")
-    }
-})*/
 
 
 
