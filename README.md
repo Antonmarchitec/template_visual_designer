@@ -34,3 +34,4 @@ https://antonmarchitec.github.io/template_visual_designer/
 -- Bill Gates --
 
 ## Imagen del proyecto.
+![landing_nueva](https://user-images.githubusercontent.com/70084380/200171789-97fcfad8-0d71-4281-ad37-151d615cef59.jpg)
