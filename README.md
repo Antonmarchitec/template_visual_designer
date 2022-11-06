@@ -30,6 +30,7 @@ Template visual designer, desarrollado para integrar a un proyecto tipo portafol
 https://antonmarchitec.github.io/template_visual_designer/
 
 ## Frase del día:
-“No te compares con nadie en este mundo. Si lo haces, te estás insultando a ti mismo”. -- Bill Gates --
+“No te compares con nadie en este mundo. Si lo haces, te estás insultando a ti mismo”. 
+-- Bill Gates --
 
 ## Imagen del proyecto.
