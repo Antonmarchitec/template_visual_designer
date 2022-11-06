@@ -1,5 +1,5 @@
 
-let speed = 2000
+/*let speed = 2000
 let progressEnd = 20
 let progressStart = 0
 let contYears = document.querySelector("#gridYears")
@@ -14,7 +14,7 @@ let progress =  setInterval(() =>{
         clearInterval(progress)
         contYears.style.background = "yellow"
     }   
-}, speed)
+}, speed)*/
 
 
 
