@@ -12,19 +12,19 @@ hamburguers.css.- integra el botón hamburguesa en el menú cuando está en modo
 SweetAlert2 .- Librería de JavaScript para generar alertas personalizables.
 
 ## Tipo de proyecto:
-Página informativa.
-página de aterrizaje
-landing page.
-Pagina diseño portafolio.
+- Página informativa.
+- página de aterrizaje
+- landing page.
+- Pagina diseño portafolio.
 
 ## Descripción del proyecto:
 Template visual designer, desarrollado para integrar a un proyecto tipo portafolio, construida con una base de CSS GRID y FLEXBOX totalmente personalizada, cuenta con un menu de navegacion, integracion a enlaces externos, integracion a redes sociales, 3 secciones,pie de pagina, boton de desplazamiento (subida), scroll personalizado y es adaptable a dispositivos de escritorio (Desktop), tablet y movil. 
 
 
 ## Diseño responsivo:
-Desktop: 1440px
-Tablet: 720px
-Móvil: 320px
+- Desktop: 1440px
+- Tablet: 720px
+- Móvil: 320px
 
 ## Vista previa:
 https://antonmarchitec.github.io/template_visual_designer/
