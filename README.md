@@ -1,15 +1,15 @@
 # PORTAFOLIO VISUAL DESIGNER
 Tecnologías utilizadas para el desarrollo:
-HTML.- Lenguaje de marcado de hipertexto para definir la estructura.
-CSS.- Hojas de estilo en cascada para el diseño visual.
-JavaScript.- Lenguaje de programación para dar funcionalidad.
-Sass compiler.- Es un preprocesador CSS que nos permite generar de manera automática hojas de estilo añadiéndoles características que no tiene CSS, y que son propias de los lenguajes de programación, por ejemplo variables, funciones, selectores anidados, etc.
+- HTML.- Lenguaje de marcado de hipertexto para definir la estructura.
+- CSS.- Hojas de estilo en cascada para el diseño visual.
+- JavaScript.- Lenguaje de programación para dar funcionalidad.
+- Sass compiler.- Es un preprocesador CSS que nos permite generar de manera automática hojas de estilo añadiéndoles características que no tiene CSS, y que son propias de los lenguajes de programación, por ejemplo variables, funciones, selectores anidados, etc.
 
 ## Librerías integradas:
-wow.js.- Se aplica animación a los elementos, de modo se va aplicando el evento scroll.
-animate.css.- integra las animaciones a los elementos
-hamburguers.css.- integra el botón hamburguesa en el menú cuando está en modo tablet y móvil.
-SweetAlert2 .- Librería de JavaScript para generar alertas personalizables.
+- wow.js.- Se aplica animación a los elementos, de modo se va aplicando el evento scroll.
+- animate.css.- integra las animaciones a los elementos
+- hamburguers.css.- integra el botón hamburguesa en el menú cuando está en modo tablet y móvil.
+- SweetAlert2 .- Librería de JavaScript para generar alertas personalizables.
 
 ## Tipo de proyecto:
 - Página informativa.
