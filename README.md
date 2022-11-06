@@ -1,4 +1,4 @@
-# TEMPLATE PORTAFOLIO VISUAL DESIGNER
+# PORTAFOLIO VISUAL DESIGNER
 Tecnologías utilizadas para el desarrollo:
 HTML.- Lenguaje de marcado de hipertexto para definir la estructura.
 CSS.- Hojas de estilo en cascada para el diseño visual.
@@ -13,12 +13,12 @@ SweetAlert2 .- Librería de JavaScript para generar alertas personalizables.
 
 ## Tipo de proyecto:
 - Página informativa.
-- página de aterrizaje
+- Página de aterrizaje
 - landing page.
-- Pagina diseño portafolio.
+- Página diseñó portafolio.
 
 ## Descripción del proyecto:
-Template visual designer, desarrollado para integrar a un proyecto tipo portafolio, construida con una base de CSS GRID y FLEXBOX totalmente personalizada, cuenta con un menu de navegacion, integracion a enlaces externos, integracion a redes sociales, 3 secciones,pie de pagina, boton de desplazamiento (subida), scroll personalizado y es adaptable a dispositivos de escritorio (Desktop), tablet y movil. 
+Témplate visual designer, desarrollado para integrar a un proyecto tipo portafolio, construida con una base de CSS GRID y FLEXBOX totalmente personalizada, cuenta con un menú de navegación, integración a enlaces externos, integración a redes sociales, 3 secciones, pie de página, botón de desplazamiento (subida), scroll personalizado y es adaptable a dispositivos de escritorio (Desktop), tablet y móvil. 
 
 
 ## Diseño responsivo:
